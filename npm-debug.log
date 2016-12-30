@@ -1,0 +1,1902 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'http-server',
+1 verbose cli   '-g' ]
+2 info using npm@3.10.8
+3 info using node@v4.2.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData http-server
+8 silly fetchNamedPackageData http-server
+9 silly mapToRegistry name http-server
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npm.taobao.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'http-server',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'http-server',
+12 silly mapToRegistry   name: 'http-server',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npm.taobao.org/http-server
+14 verbose request uri https://registry.npm.taobao.org/http-server
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 11:38:22 AM
+17 verbose request id e473ae218ba77987
+18 verbose etag "f39a-dPh2Uhy4WnJQD4jtSyUXVg"
+19 http request GET https://registry.npm.taobao.org/http-server
+20 http 304 https://registry.npm.taobao.org/http-server
+21 verbose headers { date: 'Tue, 27 Dec 2016 03:38:23 GMT',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'x-current-requests': '1',
+21 verbose headers   etag: '"f39a-dPh2Uhy4WnJQD4jtSyUXVg"',
+21 verbose headers   'x-readtime': '36' }
+22 silly get cb [ 304,
+22 silly get   { date: 'Tue, 27 Dec 2016 03:38:23 GMT',
+22 silly get     connection: 'keep-alive',
+22 silly get     'x-current-requests': '1',
+22 silly get     etag: '"f39a-dPh2Uhy4WnJQD4jtSyUXVg"',
+22 silly get     'x-readtime': '36' } ]
+23 verbose etag https://registry.npm.taobao.org/http-server from cache
+24 verbose get saving http-server to /Users/foxit/.npm/registry.npm.taobao.org/http-server/.cache.json
+25 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+26 silly install normalizeTree
+27 silly loadCurrentTree Finishing
+28 silly loadIdealTree Starting
+29 silly install loadIdealTree
+30 silly cloneCurrentTree Starting
+31 silly install cloneCurrentTreeToIdealTree
+32 silly cloneCurrentTree Finishing
+33 silly loadShrinkwrap Starting
+34 silly install loadShrinkwrap
+35 silly loadShrinkwrap Finishing
+36 silly loadAllDepsIntoIdealTree Starting
+37 silly install loadAllDepsIntoIdealTree
+38 silly resolveWithNewModule http-server@0.9.0 checking installable status
+39 silly cache add args [ 'http-server', null ]
+40 verbose cache add spec http-server
+41 silly cache add parsed spec Result {
+41 silly cache add   raw: 'http-server',
+41 silly cache add   scope: null,
+41 silly cache add   escapedName: 'http-server',
+41 silly cache add   name: 'http-server',
+41 silly cache add   rawSpec: '',
+41 silly cache add   spec: 'latest',
+41 silly cache add   type: 'tag' }
+42 silly addNamed http-server@latest
+43 verbose addNamed "latest" is being treated as a dist-tag for http-server
+44 info addNameTag [ 'http-server', 'latest' ]
+45 silly mapToRegistry name http-server
+46 silly mapToRegistry using default registry
+47 silly mapToRegistry registry https://registry.npm.taobao.org/
+48 silly mapToRegistry data Result {
+48 silly mapToRegistry   raw: 'http-server',
+48 silly mapToRegistry   scope: null,
+48 silly mapToRegistry   escapedName: 'http-server',
+48 silly mapToRegistry   name: 'http-server',
+48 silly mapToRegistry   rawSpec: '',
+48 silly mapToRegistry   spec: 'latest',
+48 silly mapToRegistry   type: 'tag' }
+49 silly mapToRegistry uri https://registry.npm.taobao.org/http-server
+50 verbose addNameTag registry:https://registry.npm.taobao.org/http-server not in flight; fetching
+51 verbose get https://registry.npm.taobao.org/http-server not expired, no request
+52 silly addNameTag next cb for http-server with tag latest
+53 silly addNamed http-server@0.9.0
+54 verbose addNamed "0.9.0" is a plain semver version for http-server
+55 silly cache afterAdd http-server@0.9.0
+56 verbose afterAdd /Users/foxit/.npm/http-server/0.9.0/package/package.json not in flight; writing
+57 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+58 verbose afterAdd /Users/foxit/.npm/http-server/0.9.0/package/package.json written
+59 silly fetchNamedPackageData colors
+60 silly mapToRegistry name colors
+61 silly mapToRegistry using default registry
+62 silly mapToRegistry registry https://registry.npm.taobao.org/
+63 silly mapToRegistry data Result {
+63 silly mapToRegistry   raw: 'colors',
+63 silly mapToRegistry   scope: null,
+63 silly mapToRegistry   escapedName: 'colors',
+63 silly mapToRegistry   name: 'colors',
+63 silly mapToRegistry   rawSpec: '',
+63 silly mapToRegistry   spec: 'latest',
+63 silly mapToRegistry   type: 'tag' }
+64 silly mapToRegistry uri https://registry.npm.taobao.org/colors
+65 silly fetchNamedPackageData corser
+66 silly mapToRegistry name corser
+67 silly mapToRegistry using default registry
+68 silly mapToRegistry registry https://registry.npm.taobao.org/
+69 silly mapToRegistry data Result {
+69 silly mapToRegistry   raw: 'corser',
+69 silly mapToRegistry   scope: null,
+69 silly mapToRegistry   escapedName: 'corser',
+69 silly mapToRegistry   name: 'corser',
+69 silly mapToRegistry   rawSpec: '',
+69 silly mapToRegistry   spec: 'latest',
+69 silly mapToRegistry   type: 'tag' }
+70 silly mapToRegistry uri https://registry.npm.taobao.org/corser
+71 silly fetchNamedPackageData ecstatic
+72 silly mapToRegistry name ecstatic
+73 silly mapToRegistry using default registry
+74 silly mapToRegistry registry https://registry.npm.taobao.org/
+75 silly mapToRegistry data Result {
+75 silly mapToRegistry   raw: 'ecstatic',
+75 silly mapToRegistry   scope: null,
+75 silly mapToRegistry   escapedName: 'ecstatic',
+75 silly mapToRegistry   name: 'ecstatic',
+75 silly mapToRegistry   rawSpec: '',
+75 silly mapToRegistry   spec: 'latest',
+75 silly mapToRegistry   type: 'tag' }
+76 silly mapToRegistry uri https://registry.npm.taobao.org/ecstatic
+77 silly fetchNamedPackageData http-proxy
+78 silly mapToRegistry name http-proxy
+79 silly mapToRegistry using default registry
+80 silly mapToRegistry registry https://registry.npm.taobao.org/
+81 silly mapToRegistry data Result {
+81 silly mapToRegistry   raw: 'http-proxy',
+81 silly mapToRegistry   scope: null,
+81 silly mapToRegistry   escapedName: 'http-proxy',
+81 silly mapToRegistry   name: 'http-proxy',
+81 silly mapToRegistry   rawSpec: '',
+81 silly mapToRegistry   spec: 'latest',
+81 silly mapToRegistry   type: 'tag' }
+82 silly mapToRegistry uri https://registry.npm.taobao.org/http-proxy
+83 silly fetchNamedPackageData opener
+84 silly mapToRegistry name opener
+85 silly mapToRegistry using default registry
+86 silly mapToRegistry registry https://registry.npm.taobao.org/
+87 silly mapToRegistry data Result {
+87 silly mapToRegistry   raw: 'opener',
+87 silly mapToRegistry   scope: null,
+87 silly mapToRegistry   escapedName: 'opener',
+87 silly mapToRegistry   name: 'opener',
+87 silly mapToRegistry   rawSpec: '',
+87 silly mapToRegistry   spec: 'latest',
+87 silly mapToRegistry   type: 'tag' }
+88 silly mapToRegistry uri https://registry.npm.taobao.org/opener
+89 silly fetchNamedPackageData optimist
+90 silly mapToRegistry name optimist
+91 silly mapToRegistry using default registry
+92 silly mapToRegistry registry https://registry.npm.taobao.org/
+93 silly mapToRegistry data Result {
+93 silly mapToRegistry   raw: 'optimist',
+93 silly mapToRegistry   scope: null,
+93 silly mapToRegistry   escapedName: 'optimist',
+93 silly mapToRegistry   name: 'optimist',
+93 silly mapToRegistry   rawSpec: '',
+93 silly mapToRegistry   spec: 'latest',
+93 silly mapToRegistry   type: 'tag' }
+94 silly mapToRegistry uri https://registry.npm.taobao.org/optimist
+95 silly fetchNamedPackageData portfinder
+96 silly mapToRegistry name portfinder
+97 silly mapToRegistry using default registry
+98 silly mapToRegistry registry https://registry.npm.taobao.org/
+99 silly mapToRegistry data Result {
+99 silly mapToRegistry   raw: 'portfinder',
+99 silly mapToRegistry   scope: null,
+99 silly mapToRegistry   escapedName: 'portfinder',
+99 silly mapToRegistry   name: 'portfinder',
+99 silly mapToRegistry   rawSpec: '',
+99 silly mapToRegistry   spec: 'latest',
+99 silly mapToRegistry   type: 'tag' }
+100 silly mapToRegistry uri https://registry.npm.taobao.org/portfinder
+101 silly fetchNamedPackageData union
+102 silly mapToRegistry name union
+103 silly mapToRegistry using default registry
+104 silly mapToRegistry registry https://registry.npm.taobao.org/
+105 silly mapToRegistry data Result {
+105 silly mapToRegistry   raw: 'union',
+105 silly mapToRegistry   scope: null,
+105 silly mapToRegistry   escapedName: 'union',
+105 silly mapToRegistry   name: 'union',
+105 silly mapToRegistry   rawSpec: '',
+105 silly mapToRegistry   spec: 'latest',
+105 silly mapToRegistry   type: 'tag' }
+106 silly mapToRegistry uri https://registry.npm.taobao.org/union
+107 verbose request uri https://registry.npm.taobao.org/colors
+108 verbose request no auth needed
+109 info attempt registry request try #1 at 11:38:22 AM
+110 verbose etag "5ddb-sC3VfkFQzjwMjEmYwovnJw"
+111 http request GET https://registry.npm.taobao.org/colors
+112 verbose request uri https://registry.npm.taobao.org/corser
+113 verbose request no auth needed
+114 info attempt registry request try #1 at 11:38:22 AM
+115 verbose etag "505e-JbVgDNds9RNybMcGIThfSw"
+116 http request GET https://registry.npm.taobao.org/corser
+117 verbose request uri https://registry.npm.taobao.org/http-proxy
+118 verbose request no auth needed
+119 info attempt registry request try #1 at 11:38:22 AM
+120 verbose etag "25ea2-lMoBiWXXIanyX6YtiqxYkg"
+121 http request GET https://registry.npm.taobao.org/http-proxy
+122 verbose request uri https://registry.npm.taobao.org/opener
+123 verbose request no auth needed
+124 info attempt registry request try #1 at 11:38:22 AM
+125 verbose etag "2a6b-FxUY33ZPr0NR4JEBEdkGHw"
+126 http request GET https://registry.npm.taobao.org/opener
+127 verbose request uri https://registry.npm.taobao.org/ecstatic
+128 verbose request no auth needed
+129 info attempt registry request try #1 at 11:38:22 AM
+130 verbose etag "16ccc-JEfRSvWjGz8oNF0NKvwWYw"
+131 http request GET https://registry.npm.taobao.org/ecstatic
+132 verbose request uri https://registry.npm.taobao.org/optimist
+133 verbose request no auth needed
+134 info attempt registry request try #1 at 11:38:22 AM
+135 verbose etag "dda7-xw0maKqlj7m1saJL5AH6lQ"
+136 http request GET https://registry.npm.taobao.org/optimist
+137 verbose request uri https://registry.npm.taobao.org/portfinder
+138 verbose request no auth needed
+139 info attempt registry request try #1 at 11:38:22 AM
+140 verbose etag "6590-/ApbUfnU+iJwZThKc//y5Q"
+141 http request GET https://registry.npm.taobao.org/portfinder
+142 verbose request uri https://registry.npm.taobao.org/union
+143 verbose request no auth needed
+144 info attempt registry request try #1 at 11:38:22 AM
+145 verbose etag "a55a-4ctJEAZf3CcAxFjL8aVgIw"
+146 http request GET https://registry.npm.taobao.org/union
+147 http 304 https://registry.npm.taobao.org/union
+148 verbose headers { date: 'Tue, 27 Dec 2016 03:38:23 GMT',
+148 verbose headers   connection: 'keep-alive',
+148 verbose headers   'x-current-requests': '1',
+148 verbose headers   etag: '"a55a-4ctJEAZf3CcAxFjL8aVgIw"',
+148 verbose headers   'x-readtime': '32' }
+149 silly get cb [ 304,
+149 silly get   { date: 'Tue, 27 Dec 2016 03:38:23 GMT',
+149 silly get     connection: 'keep-alive',
+149 silly get     'x-current-requests': '1',
+149 silly get     etag: '"a55a-4ctJEAZf3CcAxFjL8aVgIw"',
+149 silly get     'x-readtime': '32' } ]
+150 verbose etag https://registry.npm.taobao.org/union from cache
+151 verbose get saving union to /Users/foxit/.npm/registry.npm.taobao.org/union/.cache.json
+152 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+153 silly resolveWithNewModule union@0.4.6 checking installable status
+154 silly cache add args [ 'union@~0.4.3', null ]
+155 verbose cache add spec union@~0.4.3
+156 silly cache add parsed spec Result {
+156 silly cache add   raw: 'union@~0.4.3',
+156 silly cache add   scope: null,
+156 silly cache add   escapedName: 'union',
+156 silly cache add   name: 'union',
+156 silly cache add   rawSpec: '~0.4.3',
+156 silly cache add   spec: '>=0.4.3 <0.5.0',
+156 silly cache add   type: 'range' }
+157 silly addNamed union@>=0.4.3 <0.5.0
+158 verbose addNamed ">=0.4.3 <0.5.0" is a valid semver range for union
+159 silly addNameRange { name: 'union', range: '>=0.4.3 <0.5.0', hasData: false }
+160 silly mapToRegistry name union
+161 silly mapToRegistry using default registry
+162 silly mapToRegistry registry https://registry.npm.taobao.org/
+163 silly mapToRegistry data Result {
+163 silly mapToRegistry   raw: 'union',
+163 silly mapToRegistry   scope: null,
+163 silly mapToRegistry   escapedName: 'union',
+163 silly mapToRegistry   name: 'union',
+163 silly mapToRegistry   rawSpec: '',
+163 silly mapToRegistry   spec: 'latest',
+163 silly mapToRegistry   type: 'tag' }
+164 silly mapToRegistry uri https://registry.npm.taobao.org/union
+165 verbose addNameRange registry:https://registry.npm.taobao.org/union not in flight; fetching
+166 http 304 https://registry.npm.taobao.org/portfinder
+167 verbose headers { date: 'Tue, 27 Dec 2016 03:38:23 GMT',
+167 verbose headers   connection: 'keep-alive',
+167 verbose headers   'x-current-requests': '1',
+167 verbose headers   etag: '"6590-/ApbUfnU+iJwZThKc//y5Q"',
+167 verbose headers   'x-readtime': '38' }
+168 silly get cb [ 304,
+168 silly get   { date: 'Tue, 27 Dec 2016 03:38:23 GMT',
+168 silly get     connection: 'keep-alive',
+168 silly get     'x-current-requests': '1',
+168 silly get     etag: '"6590-/ApbUfnU+iJwZThKc//y5Q"',
+168 silly get     'x-readtime': '38' } ]
+169 verbose etag https://registry.npm.taobao.org/portfinder from cache
+170 verbose get saving portfinder to /Users/foxit/.npm/registry.npm.taobao.org/portfinder/.cache.json
+171 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+172 silly resolveWithNewModule portfinder@0.4.0 checking installable status
+173 silly cache add args [ 'portfinder@0.4.x', null ]
+174 verbose cache add spec portfinder@0.4.x
+175 silly cache add parsed spec Result {
+175 silly cache add   raw: 'portfinder@0.4.x',
+175 silly cache add   scope: null,
+175 silly cache add   escapedName: 'portfinder',
+175 silly cache add   name: 'portfinder',
+175 silly cache add   rawSpec: '0.4.x',
+175 silly cache add   spec: '>=0.4.0 <0.5.0',
+175 silly cache add   type: 'range' }
+176 silly addNamed portfinder@>=0.4.0 <0.5.0
+177 verbose addNamed ">=0.4.0 <0.5.0" is a valid semver range for portfinder
+178 silly addNameRange { name: 'portfinder', range: '>=0.4.0 <0.5.0', hasData: false }
+179 silly mapToRegistry name portfinder
+180 silly mapToRegistry using default registry
+181 silly mapToRegistry registry https://registry.npm.taobao.org/
+182 silly mapToRegistry data Result {
+182 silly mapToRegistry   raw: 'portfinder',
+182 silly mapToRegistry   scope: null,
+182 silly mapToRegistry   escapedName: 'portfinder',
+182 silly mapToRegistry   name: 'portfinder',
+182 silly mapToRegistry   rawSpec: '',
+182 silly mapToRegistry   spec: 'latest',
+182 silly mapToRegistry   type: 'tag' }
+183 silly mapToRegistry uri https://registry.npm.taobao.org/portfinder
+184 verbose addNameRange registry:https://registry.npm.taobao.org/portfinder not in flight; fetching
+185 http 304 https://registry.npm.taobao.org/corser
+186 verbose headers { date: 'Tue, 27 Dec 2016 03:38:23 GMT',
+186 verbose headers   connection: 'keep-alive',
+186 verbose headers   'x-current-requests': '1',
+186 verbose headers   etag: '"505e-JbVgDNds9RNybMcGIThfSw"',
+186 verbose headers   'x-readtime': '46' }
+187 silly get cb [ 304,
+187 silly get   { date: 'Tue, 27 Dec 2016 03:38:23 GMT',
+187 silly get     connection: 'keep-alive',
+187 silly get     'x-current-requests': '1',
+187 silly get     etag: '"505e-JbVgDNds9RNybMcGIThfSw"',
+187 silly get     'x-readtime': '46' } ]
+188 verbose etag https://registry.npm.taobao.org/corser from cache
+189 verbose get saving corser to /Users/foxit/.npm/registry.npm.taobao.org/corser/.cache.json
+190 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+191 http 304 https://registry.npm.taobao.org/ecstatic
+192 verbose headers { date: 'Tue, 27 Dec 2016 03:38:23 GMT',
+192 verbose headers   connection: 'keep-alive',
+192 verbose headers   'x-current-requests': '1',
+192 verbose headers   etag: '"16ccc-JEfRSvWjGz8oNF0NKvwWYw"',
+192 verbose headers   'x-readtime': '55' }
+193 silly get cb [ 304,
+193 silly get   { date: 'Tue, 27 Dec 2016 03:38:23 GMT',
+193 silly get     connection: 'keep-alive',
+193 silly get     'x-current-requests': '1',
+193 silly get     etag: '"16ccc-JEfRSvWjGz8oNF0NKvwWYw"',
+193 silly get     'x-readtime': '55' } ]
+194 verbose etag https://registry.npm.taobao.org/ecstatic from cache
+195 verbose get saving ecstatic to /Users/foxit/.npm/registry.npm.taobao.org/ecstatic/.cache.json
+196 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+197 http 304 https://registry.npm.taobao.org/optimist
+198 verbose headers { date: 'Tue, 27 Dec 2016 03:38:23 GMT',
+198 verbose headers   connection: 'keep-alive',
+198 verbose headers   'x-current-requests': '1',
+198 verbose headers   etag: '"dda7-xw0maKqlj7m1saJL5AH6lQ"',
+198 verbose headers   'x-readtime': '57' }
+199 silly get cb [ 304,
+199 silly get   { date: 'Tue, 27 Dec 2016 03:38:23 GMT',
+199 silly get     connection: 'keep-alive',
+199 silly get     'x-current-requests': '1',
+199 silly get     etag: '"dda7-xw0maKqlj7m1saJL5AH6lQ"',
+199 silly get     'x-readtime': '57' } ]
+200 verbose etag https://registry.npm.taobao.org/optimist from cache
+201 verbose get saving optimist to /Users/foxit/.npm/registry.npm.taobao.org/optimist/.cache.json
+202 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+203 silly resolveWithNewModule ecstatic@1.4.1 checking installable status
+204 silly cache add args [ 'ecstatic@^1.4.0', null ]
+205 verbose cache add spec ecstatic@^1.4.0
+206 silly cache add parsed spec Result {
+206 silly cache add   raw: 'ecstatic@^1.4.0',
+206 silly cache add   scope: null,
+206 silly cache add   escapedName: 'ecstatic',
+206 silly cache add   name: 'ecstatic',
+206 silly cache add   rawSpec: '^1.4.0',
+206 silly cache add   spec: '>=1.4.0 <2.0.0',
+206 silly cache add   type: 'range' }
+207 silly addNamed ecstatic@>=1.4.0 <2.0.0
+208 verbose addNamed ">=1.4.0 <2.0.0" is a valid semver range for ecstatic
+209 silly addNameRange { name: 'ecstatic', range: '>=1.4.0 <2.0.0', hasData: false }
+210 silly mapToRegistry name ecstatic
+211 silly mapToRegistry using default registry
+212 silly mapToRegistry registry https://registry.npm.taobao.org/
+213 silly mapToRegistry data Result {
+213 silly mapToRegistry   raw: 'ecstatic',
+213 silly mapToRegistry   scope: null,
+213 silly mapToRegistry   escapedName: 'ecstatic',
+213 silly mapToRegistry   name: 'ecstatic',
+213 silly mapToRegistry   rawSpec: '',
+213 silly mapToRegistry   spec: 'latest',
+213 silly mapToRegistry   type: 'tag' }
+214 silly mapToRegistry uri https://registry.npm.taobao.org/ecstatic
+215 verbose addNameRange registry:https://registry.npm.taobao.org/ecstatic not in flight; fetching
+216 silly resolveWithNewModule corser@2.0.1 checking installable status
+217 silly cache add args [ 'corser@~2.0.0', null ]
+218 verbose cache add spec corser@~2.0.0
+219 silly cache add parsed spec Result {
+219 silly cache add   raw: 'corser@~2.0.0',
+219 silly cache add   scope: null,
+219 silly cache add   escapedName: 'corser',
+219 silly cache add   name: 'corser',
+219 silly cache add   rawSpec: '~2.0.0',
+219 silly cache add   spec: '>=2.0.0 <2.1.0',
+219 silly cache add   type: 'range' }
+220 silly addNamed corser@>=2.0.0 <2.1.0
+221 verbose addNamed ">=2.0.0 <2.1.0" is a valid semver range for corser
+222 silly addNameRange { name: 'corser', range: '>=2.0.0 <2.1.0', hasData: false }
+223 silly mapToRegistry name corser
+224 silly mapToRegistry using default registry
+225 silly mapToRegistry registry https://registry.npm.taobao.org/
+226 silly mapToRegistry data Result {
+226 silly mapToRegistry   raw: 'corser',
+226 silly mapToRegistry   scope: null,
+226 silly mapToRegistry   escapedName: 'corser',
+226 silly mapToRegistry   name: 'corser',
+226 silly mapToRegistry   rawSpec: '',
+226 silly mapToRegistry   spec: 'latest',
+226 silly mapToRegistry   type: 'tag' }
+227 silly mapToRegistry uri https://registry.npm.taobao.org/corser
+228 verbose addNameRange registry:https://registry.npm.taobao.org/corser not in flight; fetching
+229 http 304 https://registry.npm.taobao.org/http-proxy
+230 verbose headers { date: 'Tue, 27 Dec 2016 03:38:23 GMT',
+230 verbose headers   connection: 'keep-alive',
+230 verbose headers   'x-current-requests': '1',
+230 verbose headers   etag: '"25ea2-lMoBiWXXIanyX6YtiqxYkg"',
+230 verbose headers   'x-readtime': '77' }
+231 silly get cb [ 304,
+231 silly get   { date: 'Tue, 27 Dec 2016 03:38:23 GMT',
+231 silly get     connection: 'keep-alive',
+231 silly get     'x-current-requests': '1',
+231 silly get     etag: '"25ea2-lMoBiWXXIanyX6YtiqxYkg"',
+231 silly get     'x-readtime': '77' } ]
+232 verbose etag https://registry.npm.taobao.org/http-proxy from cache
+233 verbose get saving http-proxy to /Users/foxit/.npm/registry.npm.taobao.org/http-proxy/.cache.json
+234 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+235 silly resolveWithNewModule optimist@0.6.1 checking installable status
+236 silly cache add args [ 'optimist@0.6.x', null ]
+237 verbose cache add spec optimist@0.6.x
+238 silly cache add parsed spec Result {
+238 silly cache add   raw: 'optimist@0.6.x',
+238 silly cache add   scope: null,
+238 silly cache add   escapedName: 'optimist',
+238 silly cache add   name: 'optimist',
+238 silly cache add   rawSpec: '0.6.x',
+238 silly cache add   spec: '>=0.6.0 <0.7.0',
+238 silly cache add   type: 'range' }
+239 silly addNamed optimist@>=0.6.0 <0.7.0
+240 verbose addNamed ">=0.6.0 <0.7.0" is a valid semver range for optimist
+241 silly addNameRange { name: 'optimist', range: '>=0.6.0 <0.7.0', hasData: false }
+242 silly mapToRegistry name optimist
+243 silly mapToRegistry using default registry
+244 silly mapToRegistry registry https://registry.npm.taobao.org/
+245 silly mapToRegistry data Result {
+245 silly mapToRegistry   raw: 'optimist',
+245 silly mapToRegistry   scope: null,
+245 silly mapToRegistry   escapedName: 'optimist',
+245 silly mapToRegistry   name: 'optimist',
+245 silly mapToRegistry   rawSpec: '',
+245 silly mapToRegistry   spec: 'latest',
+245 silly mapToRegistry   type: 'tag' }
+246 silly mapToRegistry uri https://registry.npm.taobao.org/optimist
+247 verbose addNameRange registry:https://registry.npm.taobao.org/optimist not in flight; fetching
+248 http 304 https://registry.npm.taobao.org/colors
+249 verbose headers { date: 'Tue, 27 Dec 2016 03:38:23 GMT',
+249 verbose headers   connection: 'keep-alive',
+249 verbose headers   'x-current-requests': '1',
+249 verbose headers   etag: '"5ddb-sC3VfkFQzjwMjEmYwovnJw"',
+249 verbose headers   'x-readtime': '91' }
+250 silly get cb [ 304,
+250 silly get   { date: 'Tue, 27 Dec 2016 03:38:23 GMT',
+250 silly get     connection: 'keep-alive',
+250 silly get     'x-current-requests': '1',
+250 silly get     etag: '"5ddb-sC3VfkFQzjwMjEmYwovnJw"',
+250 silly get     'x-readtime': '91' } ]
+251 verbose etag https://registry.npm.taobao.org/colors from cache
+252 verbose get saving colors to /Users/foxit/.npm/registry.npm.taobao.org/colors/.cache.json
+253 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+254 verbose get https://registry.npm.taobao.org/union not expired, no request
+255 silly addNameRange number 2 { name: 'union', range: '>=0.4.3 <0.5.0', hasData: true }
+256 silly addNameRange versions [ 'union',
+256 silly addNameRange   [ '0.4.6',
+256 silly addNameRange     '0.4.5',
+256 silly addNameRange     '0.4.4',
+256 silly addNameRange     '0.4.3',
+256 silly addNameRange     '0.4.2',
+256 silly addNameRange     '0.4.1',
+256 silly addNameRange     '0.4.0',
+256 silly addNameRange     '0.3.8',
+256 silly addNameRange     '0.3.7',
+256 silly addNameRange     '0.3.6',
+256 silly addNameRange     '0.3.5',
+256 silly addNameRange     '0.3.4',
+256 silly addNameRange     '0.3.3',
+256 silly addNameRange     '0.3.2',
+256 silly addNameRange     '0.3.0',
+256 silly addNameRange     '0.2.1',
+256 silly addNameRange     '0.2.0',
+256 silly addNameRange     '0.1.8',
+256 silly addNameRange     '0.1.7',
+256 silly addNameRange     '0.1.6',
+256 silly addNameRange     '0.1.5',
+256 silly addNameRange     '0.1.4',
+256 silly addNameRange     '0.1.3',
+256 silly addNameRange     '0.1.2',
+256 silly addNameRange     '0.1.0' ] ]
+257 silly addNamed union@0.4.6
+258 verbose addNamed "0.4.6" is a plain semver version for union
+259 verbose get https://registry.npm.taobao.org/portfinder not expired, no request
+260 silly addNameRange number 2 { name: 'portfinder', range: '>=0.4.0 <0.5.0', hasData: true }
+261 silly addNameRange versions [ 'portfinder',
+261 silly addNameRange   [ '1.0.10',
+261 silly addNameRange     '1.0.9',
+261 silly addNameRange     '1.0.8',
+261 silly addNameRange     '1.0.7',
+261 silly addNameRange     '1.0.7-beta.0',
+261 silly addNameRange     '1.0.6',
+261 silly addNameRange     '1.0.5',
+261 silly addNameRange     '1.0.4',
+261 silly addNameRange     '1.0.3',
+261 silly addNameRange     '1.0.2',
+261 silly addNameRange     '1.0.1',
+261 silly addNameRange     '1.0.0',
+261 silly addNameRange     '0.4.0',
+261 silly addNameRange     '0.3.0',
+261 silly addNameRange     '0.2.1',
+261 silly addNameRange     '0.2.0',
+261 silly addNameRange     '0.1.0' ] ]
+262 silly addNamed portfinder@0.4.0
+263 verbose addNamed "0.4.0" is a plain semver version for portfinder
+264 verbose get https://registry.npm.taobao.org/ecstatic not expired, no request
+265 silly addNameRange number 2 { name: 'ecstatic', range: '>=1.4.0 <2.0.0', hasData: true }
+266 silly addNameRange versions [ 'ecstatic',
+266 silly addNameRange   [ '2.1.0',
+266 silly addNameRange     '2.0.0',
+266 silly addNameRange     '1.4.1',
+266 silly addNameRange     '1.4.0',
+266 silly addNameRange     '1.3.1',
+266 silly addNameRange     '1.3.0',
+266 silly addNameRange     '1.2.0',
+266 silly addNameRange     '1.1.3',
+266 silly addNameRange     '1.1.2',
+266 silly addNameRange     '1.1.1',
+266 silly addNameRange     '1.1.0',
+266 silly addNameRange     '1.0.1',
+266 silly addNameRange     '1.0.0',
+266 silly addNameRange     '0.8.0',
+266 silly addNameRange     '0.7.6',
+266 silly addNameRange     '0.7.5',
+266 silly addNameRange     '0.7.4',
+266 silly addNameRange     '0.7.3',
+266 silly addNameRange     '0.7.2',
+266 silly addNameRange     '0.7.1',
+266 silly addNameRange     '0.7.0',
+266 silly addNameRange     '0.6.1',
+266 silly addNameRange     '0.6.0',
+266 silly addNameRange     '0.5.8',
+266 silly addNameRange     '0.5.7',
+266 silly addNameRange     '0.5.6',
+266 silly addNameRange     '0.5.5',
+266 silly addNameRange     '0.5.4',
+266 silly addNameRange     '0.5.3',
+266 silly addNameRange     '0.5.2',
+266 silly addNameRange     '0.5.1',
+266 silly addNameRange     '0.5.0',
+266 silly addNameRange     '0.4.13',
+266 silly addNameRange     '0.4.12',
+266 silly addNameRange     '0.4.11',
+266 silly addNameRange     '0.4.10',
+266 silly addNameRange     '0.4.9',
+266 silly addNameRange     '0.4.8',
+266 silly addNameRange     '0.4.7',
+266 silly addNameRange     '0.4.6',
+266 silly addNameRange     '0.4.5',
+266 silly addNameRange     '0.4.4',
+266 silly addNameRange     '0.4.3',
+266 silly addNameRange     '0.4.2',
+266 silly addNameRange     '0.4.1',
+266 silly addNameRange     '0.4.0',
+266 silly addNameRange     '0.3.2',
+266 silly addNameRange     '0.3.1',
+266 silly addNameRange     '0.3.0',
+266 silly addNameRange     '0.1.7',
+266 silly addNameRange     '0.1.6',
+266 silly addNameRange     '0.1.5',
+266 silly addNameRange     '0.1.4',
+266 silly addNameRange     '0.1.2-1',
+266 silly addNameRange     '0.1.2',
+266 silly addNameRange     '0.1.1-1',
+266 silly addNameRange     '0.1.1',
+266 silly addNameRange     '0.1.0',
+266 silly addNameRange     '0.0.1',
+266 silly addNameRange     '0.0.0' ] ]
+267 silly addNamed ecstatic@1.4.1
+268 verbose addNamed "1.4.1" is a plain semver version for ecstatic
+269 verbose get https://registry.npm.taobao.org/corser not expired, no request
+270 silly addNameRange number 2 { name: 'corser', range: '>=2.0.0 <2.1.0', hasData: true }
+271 silly addNameRange versions [ 'corser',
+271 silly addNameRange   [ '2.0.1',
+271 silly addNameRange     '2.0.0',
+271 silly addNameRange     '1.2.0',
+271 silly addNameRange     '1.1.2',
+271 silly addNameRange     '1.1.1',
+271 silly addNameRange     '1.1.0',
+271 silly addNameRange     '1.0.2',
+271 silly addNameRange     '1.0.1',
+271 silly addNameRange     '1.0.0',
+271 silly addNameRange     '0.2.0',
+271 silly addNameRange     '0.1.0' ] ]
+272 silly addNamed corser@2.0.1
+273 verbose addNamed "2.0.1" is a plain semver version for corser
+274 verbose get https://registry.npm.taobao.org/optimist not expired, no request
+275 silly addNameRange number 2 { name: 'optimist', range: '>=0.6.0 <0.7.0', hasData: true }
+276 silly addNameRange versions [ 'optimist',
+276 silly addNameRange   [ '0.6.1',
+276 silly addNameRange     '0.6.0',
+276 silly addNameRange     '0.5.2',
+276 silly addNameRange     '0.5.1',
+276 silly addNameRange     '0.5.0',
+276 silly addNameRange     '0.4.0',
+276 silly addNameRange     '0.3.7',
+276 silly addNameRange     '0.3.6',
+276 silly addNameRange     '0.3.5',
+276 silly addNameRange     '0.3.4',
+276 silly addNameRange     '0.3.3',
+276 silly addNameRange     '0.3.1',
+276 silly addNameRange     '0.3.0',
+276 silly addNameRange     '0.2.8',
+276 silly addNameRange     '0.2.7',
+276 silly addNameRange     '0.2.6',
+276 silly addNameRange     '0.2.5',
+276 silly addNameRange     '0.2.4',
+276 silly addNameRange     '0.2.3',
+276 silly addNameRange     '0.2.2',
+276 silly addNameRange     '0.2.1',
+276 silly addNameRange     '0.2.0',
+276 silly addNameRange     '0.1.9',
+276 silly addNameRange     '0.1.8',
+276 silly addNameRange     '0.1.7',
+276 silly addNameRange     '0.1.6',
+276 silly addNameRange     '0.1.5',
+276 silly addNameRange     '0.1.4',
+276 silly addNameRange     '0.0.2',
+276 silly addNameRange     '0.0.3',
+276 silly addNameRange     '0.1.2',
+276 silly addNameRange     '0.1.1',
+276 silly addNameRange     '0.1.0',
+276 silly addNameRange     '0.0.7',
+276 silly addNameRange     '0.0.6',
+276 silly addNameRange     '0.0.5',
+276 silly addNameRange     '0.0.4',
+276 silly addNameRange     '0.0.1',
+276 silly addNameRange     '0.1.3' ] ]
+277 silly addNamed optimist@0.6.1
+278 verbose addNamed "0.6.1" is a plain semver version for optimist
+279 silly cache afterAdd union@0.4.6
+280 verbose afterAdd /Users/foxit/.npm/union/0.4.6/package/package.json not in flight; writing
+281 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+282 silly cache afterAdd portfinder@0.4.0
+283 verbose afterAdd /Users/foxit/.npm/portfinder/0.4.0/package/package.json not in flight; writing
+284 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+285 silly cache afterAdd corser@2.0.1
+286 verbose afterAdd /Users/foxit/.npm/corser/2.0.1/package/package.json not in flight; writing
+287 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+288 silly resolveWithNewModule http-proxy@1.16.2 checking installable status
+289 silly cache add args [ 'http-proxy@^1.8.1', null ]
+290 verbose cache add spec http-proxy@^1.8.1
+291 silly cache add parsed spec Result {
+291 silly cache add   raw: 'http-proxy@^1.8.1',
+291 silly cache add   scope: null,
+291 silly cache add   escapedName: 'http-proxy',
+291 silly cache add   name: 'http-proxy',
+291 silly cache add   rawSpec: '^1.8.1',
+291 silly cache add   spec: '>=1.8.1 <2.0.0',
+291 silly cache add   type: 'range' }
+292 silly addNamed http-proxy@>=1.8.1 <2.0.0
+293 verbose addNamed ">=1.8.1 <2.0.0" is a valid semver range for http-proxy
+294 silly addNameRange { name: 'http-proxy', range: '>=1.8.1 <2.0.0', hasData: false }
+295 silly mapToRegistry name http-proxy
+296 silly mapToRegistry using default registry
+297 silly mapToRegistry registry https://registry.npm.taobao.org/
+298 silly mapToRegistry data Result {
+298 silly mapToRegistry   raw: 'http-proxy',
+298 silly mapToRegistry   scope: null,
+298 silly mapToRegistry   escapedName: 'http-proxy',
+298 silly mapToRegistry   name: 'http-proxy',
+298 silly mapToRegistry   rawSpec: '',
+298 silly mapToRegistry   spec: 'latest',
+298 silly mapToRegistry   type: 'tag' }
+299 silly mapToRegistry uri https://registry.npm.taobao.org/http-proxy
+300 verbose addNameRange registry:https://registry.npm.taobao.org/http-proxy not in flight; fetching
+301 silly cache afterAdd optimist@0.6.1
+302 verbose afterAdd /Users/foxit/.npm/optimist/0.6.1/package/package.json not in flight; writing
+303 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+304 silly cache afterAdd ecstatic@1.4.1
+305 verbose afterAdd /Users/foxit/.npm/ecstatic/1.4.1/package/package.json not in flight; writing
+306 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+307 silly resolveWithNewModule colors@1.0.3 checking installable status
+308 silly cache add args [ 'colors@1.0.3', null ]
+309 verbose cache add spec colors@1.0.3
+310 silly cache add parsed spec Result {
+310 silly cache add   raw: 'colors@1.0.3',
+310 silly cache add   scope: null,
+310 silly cache add   escapedName: 'colors',
+310 silly cache add   name: 'colors',
+310 silly cache add   rawSpec: '1.0.3',
+310 silly cache add   spec: '1.0.3',
+310 silly cache add   type: 'version' }
+311 silly addNamed colors@1.0.3
+312 verbose addNamed "1.0.3" is a plain semver version for colors
+313 silly mapToRegistry name colors
+314 silly mapToRegistry using default registry
+315 silly mapToRegistry registry https://registry.npm.taobao.org/
+316 silly mapToRegistry data Result {
+316 silly mapToRegistry   raw: 'colors',
+316 silly mapToRegistry   scope: null,
+316 silly mapToRegistry   escapedName: 'colors',
+316 silly mapToRegistry   name: 'colors',
+316 silly mapToRegistry   rawSpec: '',
+316 silly mapToRegistry   spec: 'latest',
+316 silly mapToRegistry   type: 'tag' }
+317 silly mapToRegistry uri https://registry.npm.taobao.org/colors
+318 verbose addNameVersion registry:https://registry.npm.taobao.org/colors not in flight; fetching
+319 verbose get https://registry.npm.taobao.org/http-proxy not expired, no request
+320 silly addNameRange number 2 { name: 'http-proxy', range: '>=1.8.1 <2.0.0', hasData: true }
+321 silly addNameRange versions [ 'http-proxy',
+321 silly addNameRange   [ '1.16.2',
+321 silly addNameRange     '1.16.1',
+321 silly addNameRange     '1.16.0',
+321 silly addNameRange     '1.15.2',
+321 silly addNameRange     '1.15.1',
+321 silly addNameRange     '1.15.0',
+321 silly addNameRange     '1.14.0',
+321 silly addNameRange     '1.13.3',
+321 silly addNameRange     '1.13.2',
+321 silly addNameRange     '1.13.1',
+321 silly addNameRange     '1.13.0',
+321 silly addNameRange     '1.12.1',
+321 silly addNameRange     '1.12.0',
+321 silly addNameRange     '1.11.3',
+321 silly addNameRange     '1.11.2',
+321 silly addNameRange     '1.11.1',
+321 silly addNameRange     '1.11.0',
+321 silly addNameRange     '1.10.1',
+321 silly addNameRange     '1.10.0',
+321 silly addNameRange     '1.9.1',
+321 silly addNameRange     '1.9.0',
+321 silly addNameRange     '1.8.1',
+321 silly addNameRange     '1.8.0',
+321 silly addNameRange     '1.7.3',
+321 silly addNameRange     '1.7.2',
+321 silly addNameRange     '1.7.1',
+321 silly addNameRange     '1.7.0',
+321 silly addNameRange     '1.6.2',
+321 silly addNameRange     '1.6.1',
+321 silly addNameRange     '1.6.0',
+321 silly addNameRange     '1.5.3',
+321 silly addNameRange     '1.5.2',
+321 silly addNameRange     '1.5.1',
+321 silly addNameRange     '1.5.0',
+321 silly addNameRange     '1.4.3',
+321 silly addNameRange     '1.4.2',
+321 silly addNameRange     '1.4.1',
+321 silly addNameRange     '1.4.0',
+321 silly addNameRange     '1.3.0',
+321 silly addNameRange     '1.2.1',
+321 silly addNameRange     '1.2.0',
+321 silly addNameRange     '1.1.6',
+321 silly addNameRange     '1.1.5',
+321 silly addNameRange     '1.1.4',
+321 silly addNameRange     '1.1.3',
+321 silly addNameRange     '1.1.2',
+321 silly addNameRange     '1.1.1',
+321 silly addNameRange     '1.1.0',
+321 silly addNameRange     '1.0.3',
+321 silly addNameRange     '1.0.2',
+321 silly addNameRange     '1.0.1',
+321 silly addNameRange     '1.0.0',
+321 silly addNameRange     '0.10.4',
+321 silly addNameRange     '0.10.3',
+321 silly addNameRange     '0.10.2',
+321 silly addNameRange     '0.10.1',
+321 silly addNameRange     '0.10.0',
+321 silly addNameRange     '0.9.1',
+321 silly addNameRange     '0.9.0',
+321 silly addNameRange     '0.8.7',
+321 silly addNameRange     '0.8.6',
+321 silly addNameRange     '0.8.5',
+321 silly addNameRange     '0.8.4',
+321 silly addNameRange     '0.8.3',
+321 silly addNameRange     '0.8.2',
+321 silly addNameRange     '0.8.1',
+321 silly addNameRange     '0.8.0',
+321 silly addNameRange     '0.7.6',
+321 silly addNameRange     '0.7.5',
+321 silly addNameRange     '0.7.4',
+321 silly addNameRange     '0.7.3',
+321 silly addNameRange     '0.7.2',
+321 silly addNameRange     '0.6.6',
+321 silly addNameRange     '0.6.5',
+321 silly addNameRange     '0.6.4',
+321 silly addNameRange     '0.6.2',
+321 silly addNameRange     '0.7.0',
+321 silly addNameRange     '0.6.1',
+321 silly addNameRange     '0.6.0',
+321 silly addNameRange     '0.5.11',
+321 silly addNameRange     '0.5.10',
+321 silly addNameRange     '0.5.9' ] ]
+322 silly addNamed http-proxy@1.16.2
+323 verbose addNamed "1.16.2" is a plain semver version for http-proxy
+324 verbose afterAdd /Users/foxit/.npm/union/0.4.6/package/package.json written
+325 verbose afterAdd /Users/foxit/.npm/portfinder/0.4.0/package/package.json written
+326 verbose afterAdd /Users/foxit/.npm/corser/2.0.1/package/package.json written
+327 verbose get https://registry.npm.taobao.org/colors not expired, no request
+328 verbose afterAdd /Users/foxit/.npm/optimist/0.6.1/package/package.json written
+329 verbose afterAdd /Users/foxit/.npm/ecstatic/1.4.1/package/package.json written
+330 silly cache afterAdd http-proxy@1.16.2
+331 verbose afterAdd /Users/foxit/.npm/http-proxy/1.16.2/package/package.json not in flight; writing
+332 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+333 silly cache afterAdd colors@1.0.3
+334 verbose afterAdd /Users/foxit/.npm/colors/1.0.3/package/package.json not in flight; writing
+335 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+336 verbose afterAdd /Users/foxit/.npm/http-proxy/1.16.2/package/package.json written
+337 verbose afterAdd /Users/foxit/.npm/colors/1.0.3/package/package.json written
+338 http 304 https://registry.npm.taobao.org/opener
+339 verbose headers { date: 'Tue, 27 Dec 2016 03:38:23 GMT',
+339 verbose headers   connection: 'keep-alive',
+339 verbose headers   'x-current-requests': '1',
+339 verbose headers   etag: '"2a6b-FxUY33ZPr0NR4JEBEdkGHw"',
+339 verbose headers   'x-readtime': '81' }
+340 silly get cb [ 304,
+340 silly get   { date: 'Tue, 27 Dec 2016 03:38:23 GMT',
+340 silly get     connection: 'keep-alive',
+340 silly get     'x-current-requests': '1',
+340 silly get     etag: '"2a6b-FxUY33ZPr0NR4JEBEdkGHw"',
+340 silly get     'x-readtime': '81' } ]
+341 verbose etag https://registry.npm.taobao.org/opener from cache
+342 verbose get saving opener to /Users/foxit/.npm/registry.npm.taobao.org/opener/.cache.json
+343 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+344 silly resolveWithNewModule opener@1.4.2 checking installable status
+345 silly cache add args [ 'opener@~1.4.0', null ]
+346 verbose cache add spec opener@~1.4.0
+347 silly cache add parsed spec Result {
+347 silly cache add   raw: 'opener@~1.4.0',
+347 silly cache add   scope: null,
+347 silly cache add   escapedName: 'opener',
+347 silly cache add   name: 'opener',
+347 silly cache add   rawSpec: '~1.4.0',
+347 silly cache add   spec: '>=1.4.0 <1.5.0',
+347 silly cache add   type: 'range' }
+348 silly addNamed opener@>=1.4.0 <1.5.0
+349 verbose addNamed ">=1.4.0 <1.5.0" is a valid semver range for opener
+350 silly addNameRange { name: 'opener', range: '>=1.4.0 <1.5.0', hasData: false }
+351 silly mapToRegistry name opener
+352 silly mapToRegistry using default registry
+353 silly mapToRegistry registry https://registry.npm.taobao.org/
+354 silly mapToRegistry data Result {
+354 silly mapToRegistry   raw: 'opener',
+354 silly mapToRegistry   scope: null,
+354 silly mapToRegistry   escapedName: 'opener',
+354 silly mapToRegistry   name: 'opener',
+354 silly mapToRegistry   rawSpec: '',
+354 silly mapToRegistry   spec: 'latest',
+354 silly mapToRegistry   type: 'tag' }
+355 silly mapToRegistry uri https://registry.npm.taobao.org/opener
+356 verbose addNameRange registry:https://registry.npm.taobao.org/opener not in flight; fetching
+357 verbose get https://registry.npm.taobao.org/opener not expired, no request
+358 silly addNameRange number 2 { name: 'opener', range: '>=1.4.0 <1.5.0', hasData: true }
+359 silly addNameRange versions [ 'opener',
+359 silly addNameRange   [ '1.4.2',
+359 silly addNameRange     '1.4.1',
+359 silly addNameRange     '1.4.0',
+359 silly addNameRange     '1.3.0',
+359 silly addNameRange     '1.2.0',
+359 silly addNameRange     '1.1.0',
+359 silly addNameRange     '1.0.1',
+359 silly addNameRange     '1.0.0' ] ]
+360 silly addNamed opener@1.4.2
+361 verbose addNamed "1.4.2" is a plain semver version for opener
+362 silly cache afterAdd opener@1.4.2
+363 verbose afterAdd /Users/foxit/.npm/opener/1.4.2/package/package.json not in flight; writing
+364 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+365 verbose afterAdd /Users/foxit/.npm/opener/1.4.2/package/package.json written
+366 silly fetchNamedPackageData he
+367 silly mapToRegistry name he
+368 silly mapToRegistry using default registry
+369 silly mapToRegistry registry https://registry.npm.taobao.org/
+370 silly mapToRegistry data Result {
+370 silly mapToRegistry   raw: 'he',
+370 silly mapToRegistry   scope: null,
+370 silly mapToRegistry   escapedName: 'he',
+370 silly mapToRegistry   name: 'he',
+370 silly mapToRegistry   rawSpec: '',
+370 silly mapToRegistry   spec: 'latest',
+370 silly mapToRegistry   type: 'tag' }
+371 silly mapToRegistry uri https://registry.npm.taobao.org/he
+372 silly fetchNamedPackageData mime
+373 silly mapToRegistry name mime
+374 silly mapToRegistry using default registry
+375 silly mapToRegistry registry https://registry.npm.taobao.org/
+376 silly mapToRegistry data Result {
+376 silly mapToRegistry   raw: 'mime',
+376 silly mapToRegistry   scope: null,
+376 silly mapToRegistry   escapedName: 'mime',
+376 silly mapToRegistry   name: 'mime',
+376 silly mapToRegistry   rawSpec: '',
+376 silly mapToRegistry   spec: 'latest',
+376 silly mapToRegistry   type: 'tag' }
+377 silly mapToRegistry uri https://registry.npm.taobao.org/mime
+378 silly fetchNamedPackageData minimist
+379 silly mapToRegistry name minimist
+380 silly mapToRegistry using default registry
+381 silly mapToRegistry registry https://registry.npm.taobao.org/
+382 silly mapToRegistry data Result {
+382 silly mapToRegistry   raw: 'minimist',
+382 silly mapToRegistry   scope: null,
+382 silly mapToRegistry   escapedName: 'minimist',
+382 silly mapToRegistry   name: 'minimist',
+382 silly mapToRegistry   rawSpec: '',
+382 silly mapToRegistry   spec: 'latest',
+382 silly mapToRegistry   type: 'tag' }
+383 silly mapToRegistry uri https://registry.npm.taobao.org/minimist
+384 silly fetchNamedPackageData url-join
+385 silly mapToRegistry name url-join
+386 silly mapToRegistry using default registry
+387 silly mapToRegistry registry https://registry.npm.taobao.org/
+388 silly mapToRegistry data Result {
+388 silly mapToRegistry   raw: 'url-join',
+388 silly mapToRegistry   scope: null,
+388 silly mapToRegistry   escapedName: 'url-join',
+388 silly mapToRegistry   name: 'url-join',
+388 silly mapToRegistry   rawSpec: '',
+388 silly mapToRegistry   spec: 'latest',
+388 silly mapToRegistry   type: 'tag' }
+389 silly mapToRegistry uri https://registry.npm.taobao.org/url-join
+390 verbose request uri https://registry.npm.taobao.org/he
+391 verbose request no auth needed
+392 info attempt registry request try #1 at 11:38:23 AM
+393 verbose etag "c0a7-F3pjUxY5GfKdRiZ6WhUtqA"
+394 http request GET https://registry.npm.taobao.org/he
+395 verbose request uri https://registry.npm.taobao.org/mime
+396 verbose request no auth needed
+397 info attempt registry request try #1 at 11:38:23 AM
+398 verbose etag "5946-KS32Fo/Clp9hZ9EHE2APLg"
+399 http request GET https://registry.npm.taobao.org/mime
+400 verbose request uri https://registry.npm.taobao.org/url-join
+401 verbose request no auth needed
+402 info attempt registry request try #1 at 11:38:23 AM
+403 verbose etag "1481-dKSGAAB+rzw6RrxochYE/A"
+404 http request GET https://registry.npm.taobao.org/url-join
+405 verbose request uri https://registry.npm.taobao.org/minimist
+406 verbose request no auth needed
+407 info attempt registry request try #1 at 11:38:23 AM
+408 verbose etag "7abc-gTAiSHhsKVNAZQW07W4QYQ"
+409 http request GET https://registry.npm.taobao.org/minimist
+410 http 304 https://registry.npm.taobao.org/url-join
+411 verbose headers { date: 'Tue, 27 Dec 2016 03:38:23 GMT',
+411 verbose headers   connection: 'keep-alive',
+411 verbose headers   'x-current-requests': '1',
+411 verbose headers   etag: '"1481-dKSGAAB+rzw6RrxochYE/A"',
+411 verbose headers   'x-readtime': '22' }
+412 silly get cb [ 304,
+412 silly get   { date: 'Tue, 27 Dec 2016 03:38:23 GMT',
+412 silly get     connection: 'keep-alive',
+412 silly get     'x-current-requests': '1',
+412 silly get     etag: '"1481-dKSGAAB+rzw6RrxochYE/A"',
+412 silly get     'x-readtime': '22' } ]
+413 verbose etag https://registry.npm.taobao.org/url-join from cache
+414 verbose get saving url-join to /Users/foxit/.npm/registry.npm.taobao.org/url-join/.cache.json
+415 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+416 silly resolveWithNewModule url-join@1.1.0 checking installable status
+417 silly cache add args [ 'url-join@^1.0.0', null ]
+418 verbose cache add spec url-join@^1.0.0
+419 silly cache add parsed spec Result {
+419 silly cache add   raw: 'url-join@^1.0.0',
+419 silly cache add   scope: null,
+419 silly cache add   escapedName: 'url-join',
+419 silly cache add   name: 'url-join',
+419 silly cache add   rawSpec: '^1.0.0',
+419 silly cache add   spec: '>=1.0.0 <2.0.0',
+419 silly cache add   type: 'range' }
+420 silly addNamed url-join@>=1.0.0 <2.0.0
+421 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for url-join
+422 silly addNameRange { name: 'url-join', range: '>=1.0.0 <2.0.0', hasData: false }
+423 silly mapToRegistry name url-join
+424 silly mapToRegistry using default registry
+425 silly mapToRegistry registry https://registry.npm.taobao.org/
+426 silly mapToRegistry data Result {
+426 silly mapToRegistry   raw: 'url-join',
+426 silly mapToRegistry   scope: null,
+426 silly mapToRegistry   escapedName: 'url-join',
+426 silly mapToRegistry   name: 'url-join',
+426 silly mapToRegistry   rawSpec: '',
+426 silly mapToRegistry   spec: 'latest',
+426 silly mapToRegistry   type: 'tag' }
+427 silly mapToRegistry uri https://registry.npm.taobao.org/url-join
+428 verbose addNameRange registry:https://registry.npm.taobao.org/url-join not in flight; fetching
+429 verbose get https://registry.npm.taobao.org/url-join not expired, no request
+430 silly addNameRange number 2 { name: 'url-join', range: '>=1.0.0 <2.0.0', hasData: true }
+431 silly addNameRange versions [ 'url-join', [ '1.1.0', '1.0.0', '0.0.1' ] ]
+432 silly addNamed url-join@1.1.0
+433 verbose addNamed "1.1.0" is a plain semver version for url-join
+434 silly cache afterAdd url-join@1.1.0
+435 verbose afterAdd /Users/foxit/.npm/url-join/1.1.0/package/package.json not in flight; writing
+436 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+437 http 304 https://registry.npm.taobao.org/mime
+438 verbose headers { date: 'Tue, 27 Dec 2016 03:38:23 GMT',
+438 verbose headers   connection: 'keep-alive',
+438 verbose headers   'x-current-requests': '1',
+438 verbose headers   etag: '"5946-KS32Fo/Clp9hZ9EHE2APLg"',
+438 verbose headers   'x-readtime': '29' }
+439 silly get cb [ 304,
+439 silly get   { date: 'Tue, 27 Dec 2016 03:38:23 GMT',
+439 silly get     connection: 'keep-alive',
+439 silly get     'x-current-requests': '1',
+439 silly get     etag: '"5946-KS32Fo/Clp9hZ9EHE2APLg"',
+439 silly get     'x-readtime': '29' } ]
+440 verbose etag https://registry.npm.taobao.org/mime from cache
+441 verbose get saving mime to /Users/foxit/.npm/registry.npm.taobao.org/mime/.cache.json
+442 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+443 http 304 https://registry.npm.taobao.org/he
+444 verbose headers { date: 'Tue, 27 Dec 2016 03:38:23 GMT',
+444 verbose headers   connection: 'keep-alive',
+444 verbose headers   'x-current-requests': '1',
+444 verbose headers   etag: '"c0a7-F3pjUxY5GfKdRiZ6WhUtqA"',
+444 verbose headers   'x-readtime': '35' }
+445 silly get cb [ 304,
+445 silly get   { date: 'Tue, 27 Dec 2016 03:38:23 GMT',
+445 silly get     connection: 'keep-alive',
+445 silly get     'x-current-requests': '1',
+445 silly get     etag: '"c0a7-F3pjUxY5GfKdRiZ6WhUtqA"',
+445 silly get     'x-readtime': '35' } ]
+446 verbose etag https://registry.npm.taobao.org/he from cache
+447 verbose get saving he to /Users/foxit/.npm/registry.npm.taobao.org/he/.cache.json
+448 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+449 verbose afterAdd /Users/foxit/.npm/url-join/1.1.0/package/package.json written
+450 silly resolveWithNewModule he@0.5.0 checking installable status
+451 silly cache add args [ 'he@^0.5.0', null ]
+452 verbose cache add spec he@^0.5.0
+453 silly cache add parsed spec Result {
+453 silly cache add   raw: 'he@^0.5.0',
+453 silly cache add   scope: null,
+453 silly cache add   escapedName: 'he',
+453 silly cache add   name: 'he',
+453 silly cache add   rawSpec: '^0.5.0',
+453 silly cache add   spec: '>=0.5.0 <0.6.0',
+453 silly cache add   type: 'range' }
+454 silly addNamed he@>=0.5.0 <0.6.0
+455 verbose addNamed ">=0.5.0 <0.6.0" is a valid semver range for he
+456 silly addNameRange { name: 'he', range: '>=0.5.0 <0.6.0', hasData: false }
+457 silly mapToRegistry name he
+458 silly mapToRegistry using default registry
+459 silly mapToRegistry registry https://registry.npm.taobao.org/
+460 silly mapToRegistry data Result {
+460 silly mapToRegistry   raw: 'he',
+460 silly mapToRegistry   scope: null,
+460 silly mapToRegistry   escapedName: 'he',
+460 silly mapToRegistry   name: 'he',
+460 silly mapToRegistry   rawSpec: '',
+460 silly mapToRegistry   spec: 'latest',
+460 silly mapToRegistry   type: 'tag' }
+461 silly mapToRegistry uri https://registry.npm.taobao.org/he
+462 verbose addNameRange registry:https://registry.npm.taobao.org/he not in flight; fetching
+463 silly resolveWithNewModule mime@1.3.4 checking installable status
+464 silly cache add args [ 'mime@^1.2.11', null ]
+465 verbose cache add spec mime@^1.2.11
+466 silly cache add parsed spec Result {
+466 silly cache add   raw: 'mime@^1.2.11',
+466 silly cache add   scope: null,
+466 silly cache add   escapedName: 'mime',
+466 silly cache add   name: 'mime',
+466 silly cache add   rawSpec: '^1.2.11',
+466 silly cache add   spec: '>=1.2.11 <2.0.0',
+466 silly cache add   type: 'range' }
+467 silly addNamed mime@>=1.2.11 <2.0.0
+468 verbose addNamed ">=1.2.11 <2.0.0" is a valid semver range for mime
+469 silly addNameRange { name: 'mime', range: '>=1.2.11 <2.0.0', hasData: false }
+470 silly mapToRegistry name mime
+471 silly mapToRegistry using default registry
+472 silly mapToRegistry registry https://registry.npm.taobao.org/
+473 silly mapToRegistry data Result {
+473 silly mapToRegistry   raw: 'mime',
+473 silly mapToRegistry   scope: null,
+473 silly mapToRegistry   escapedName: 'mime',
+473 silly mapToRegistry   name: 'mime',
+473 silly mapToRegistry   rawSpec: '',
+473 silly mapToRegistry   spec: 'latest',
+473 silly mapToRegistry   type: 'tag' }
+474 silly mapToRegistry uri https://registry.npm.taobao.org/mime
+475 verbose addNameRange registry:https://registry.npm.taobao.org/mime not in flight; fetching
+476 verbose get https://registry.npm.taobao.org/he not expired, no request
+477 silly addNameRange number 2 { name: 'he', range: '>=0.5.0 <0.6.0', hasData: true }
+478 silly addNameRange versions [ 'he',
+478 silly addNameRange   [ '1.1.0',
+478 silly addNameRange     '1.0.0',
+478 silly addNameRange     '0.5.0',
+478 silly addNameRange     '0.4.1',
+478 silly addNameRange     '0.4.0',
+478 silly addNameRange     '0.3.6',
+478 silly addNameRange     '0.3.5',
+478 silly addNameRange     '0.3.4',
+478 silly addNameRange     '0.3.3',
+478 silly addNameRange     '0.3.2',
+478 silly addNameRange     '0.3.1',
+478 silly addNameRange     '0.3.0',
+478 silly addNameRange     '0.2.1',
+478 silly addNameRange     '0.2.0',
+478 silly addNameRange     '0.1.10',
+478 silly addNameRange     '0.1.9',
+478 silly addNameRange     '0.1.8',
+478 silly addNameRange     '0.1.7',
+478 silly addNameRange     '0.1.6',
+478 silly addNameRange     '0.1.5',
+478 silly addNameRange     '0.1.4',
+478 silly addNameRange     '0.1.3',
+478 silly addNameRange     '0.1.2',
+478 silly addNameRange     '0.1.1',
+478 silly addNameRange     '0.1.0' ] ]
+479 silly addNamed he@0.5.0
+480 verbose addNamed "0.5.0" is a plain semver version for he
+481 verbose get https://registry.npm.taobao.org/mime not expired, no request
+482 silly addNameRange number 2 { name: 'mime', range: '>=1.2.11 <2.0.0', hasData: true }
+483 silly addNameRange versions [ 'mime',
+483 silly addNameRange   [ '1.3.4',
+483 silly addNameRange     '1.3.3',
+483 silly addNameRange     '1.3.2',
+483 silly addNameRange     '1.3.0',
+483 silly addNameRange     '1.2.11',
+483 silly addNameRange     '1.2.10',
+483 silly addNameRange     '1.2.9',
+483 silly addNameRange     '1.2.8',
+483 silly addNameRange     '1.2.7',
+483 silly addNameRange     '1.2.6',
+483 silly addNameRange     '1.2.5',
+483 silly addNameRange     '1.2.4',
+483 silly addNameRange     '1.2.3',
+483 silly addNameRange     '1.2.2',
+483 silly addNameRange     '1.1.0',
+483 silly addNameRange     '1.2.1',
+483 silly addNameRange     '1.0.0' ] ]
+484 silly addNamed mime@1.3.4
+485 verbose addNamed "1.3.4" is a plain semver version for mime
+486 silly cache afterAdd he@0.5.0
+487 verbose afterAdd /Users/foxit/.npm/he/0.5.0/package/package.json not in flight; writing
+488 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+489 http 304 https://registry.npm.taobao.org/minimist
+490 verbose headers { date: 'Tue, 27 Dec 2016 03:38:23 GMT',
+490 verbose headers   connection: 'keep-alive',
+490 verbose headers   'x-current-requests': '1',
+490 verbose headers   etag: '"7abc-gTAiSHhsKVNAZQW07W4QYQ"',
+490 verbose headers   'x-readtime': '60' }
+491 silly get cb [ 304,
+491 silly get   { date: 'Tue, 27 Dec 2016 03:38:23 GMT',
+491 silly get     connection: 'keep-alive',
+491 silly get     'x-current-requests': '1',
+491 silly get     etag: '"7abc-gTAiSHhsKVNAZQW07W4QYQ"',
+491 silly get     'x-readtime': '60' } ]
+492 verbose etag https://registry.npm.taobao.org/minimist from cache
+493 verbose get saving minimist to /Users/foxit/.npm/registry.npm.taobao.org/minimist/.cache.json
+494 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+495 silly cache afterAdd mime@1.3.4
+496 verbose afterAdd /Users/foxit/.npm/mime/1.3.4/package/package.json not in flight; writing
+497 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+498 verbose afterAdd /Users/foxit/.npm/he/0.5.0/package/package.json written
+499 verbose afterAdd /Users/foxit/.npm/mime/1.3.4/package/package.json written
+500 silly resolveWithNewModule minimist@1.2.0 checking installable status
+501 silly cache add args [ 'minimist@^1.1.0', null ]
+502 verbose cache add spec minimist@^1.1.0
+503 silly cache add parsed spec Result {
+503 silly cache add   raw: 'minimist@^1.1.0',
+503 silly cache add   scope: null,
+503 silly cache add   escapedName: 'minimist',
+503 silly cache add   name: 'minimist',
+503 silly cache add   rawSpec: '^1.1.0',
+503 silly cache add   spec: '>=1.1.0 <2.0.0',
+503 silly cache add   type: 'range' }
+504 silly addNamed minimist@>=1.1.0 <2.0.0
+505 verbose addNamed ">=1.1.0 <2.0.0" is a valid semver range for minimist
+506 silly addNameRange { name: 'minimist', range: '>=1.1.0 <2.0.0', hasData: false }
+507 silly mapToRegistry name minimist
+508 silly mapToRegistry using default registry
+509 silly mapToRegistry registry https://registry.npm.taobao.org/
+510 silly mapToRegistry data Result {
+510 silly mapToRegistry   raw: 'minimist',
+510 silly mapToRegistry   scope: null,
+510 silly mapToRegistry   escapedName: 'minimist',
+510 silly mapToRegistry   name: 'minimist',
+510 silly mapToRegistry   rawSpec: '',
+510 silly mapToRegistry   spec: 'latest',
+510 silly mapToRegistry   type: 'tag' }
+511 silly mapToRegistry uri https://registry.npm.taobao.org/minimist
+512 verbose addNameRange registry:https://registry.npm.taobao.org/minimist not in flight; fetching
+513 verbose get https://registry.npm.taobao.org/minimist not expired, no request
+514 silly addNameRange number 2 { name: 'minimist', range: '>=1.1.0 <2.0.0', hasData: true }
+515 silly addNameRange versions [ 'minimist',
+515 silly addNameRange   [ '1.2.0',
+515 silly addNameRange     '1.1.3',
+515 silly addNameRange     '1.1.2',
+515 silly addNameRange     '1.1.1',
+515 silly addNameRange     '1.1.0',
+515 silly addNameRange     '1.0.0',
+515 silly addNameRange     '0.2.0',
+515 silly addNameRange     '0.1.0',
+515 silly addNameRange     '0.0.10',
+515 silly addNameRange     '0.0.9',
+515 silly addNameRange     '0.0.8',
+515 silly addNameRange     '0.0.7',
+515 silly addNameRange     '0.0.6',
+515 silly addNameRange     '0.0.5',
+515 silly addNameRange     '0.0.4',
+515 silly addNameRange     '0.0.3',
+515 silly addNameRange     '0.0.2',
+515 silly addNameRange     '0.0.1',
+515 silly addNameRange     '0.0.0' ] ]
+516 silly addNamed minimist@1.2.0
+517 verbose addNamed "1.2.0" is a plain semver version for minimist
+518 silly cache afterAdd minimist@1.2.0
+519 verbose afterAdd /Users/foxit/.npm/minimist/1.2.0/package/package.json not in flight; writing
+520 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+521 verbose afterAdd /Users/foxit/.npm/minimist/1.2.0/package/package.json written
+522 silly fetchNamedPackageData eventemitter3
+523 silly mapToRegistry name eventemitter3
+524 silly mapToRegistry using default registry
+525 silly mapToRegistry registry https://registry.npm.taobao.org/
+526 silly mapToRegistry data Result {
+526 silly mapToRegistry   raw: 'eventemitter3',
+526 silly mapToRegistry   scope: null,
+526 silly mapToRegistry   escapedName: 'eventemitter3',
+526 silly mapToRegistry   name: 'eventemitter3',
+526 silly mapToRegistry   rawSpec: '',
+526 silly mapToRegistry   spec: 'latest',
+526 silly mapToRegistry   type: 'tag' }
+527 silly mapToRegistry uri https://registry.npm.taobao.org/eventemitter3
+528 silly fetchNamedPackageData requires-port
+529 silly mapToRegistry name requires-port
+530 silly mapToRegistry using default registry
+531 silly mapToRegistry registry https://registry.npm.taobao.org/
+532 silly mapToRegistry data Result {
+532 silly mapToRegistry   raw: 'requires-port',
+532 silly mapToRegistry   scope: null,
+532 silly mapToRegistry   escapedName: 'requires-port',
+532 silly mapToRegistry   name: 'requires-port',
+532 silly mapToRegistry   rawSpec: '',
+532 silly mapToRegistry   spec: 'latest',
+532 silly mapToRegistry   type: 'tag' }
+533 silly mapToRegistry uri https://registry.npm.taobao.org/requires-port
+534 verbose request uri https://registry.npm.taobao.org/eventemitter3
+535 verbose request no auth needed
+536 info attempt registry request try #1 at 11:38:23 AM
+537 verbose etag "8aa8-MOxbeIe4HnybB2GiARhWIQ"
+538 http request GET https://registry.npm.taobao.org/eventemitter3
+539 verbose request uri https://registry.npm.taobao.org/requires-port
+540 verbose request no auth needed
+541 info attempt registry request try #1 at 11:38:23 AM
+542 verbose etag "1ce5-bFQcO1enjYVWZvoAoOF2gQ"
+543 http request GET https://registry.npm.taobao.org/requires-port
+544 http 304 https://registry.npm.taobao.org/requires-port
+545 verbose headers { date: 'Tue, 27 Dec 2016 03:38:24 GMT',
+545 verbose headers   connection: 'keep-alive',
+545 verbose headers   'x-current-requests': '1',
+545 verbose headers   etag: '"1ce5-bFQcO1enjYVWZvoAoOF2gQ"',
+545 verbose headers   'x-readtime': '12' }
+546 silly get cb [ 304,
+546 silly get   { date: 'Tue, 27 Dec 2016 03:38:24 GMT',
+546 silly get     connection: 'keep-alive',
+546 silly get     'x-current-requests': '1',
+546 silly get     etag: '"1ce5-bFQcO1enjYVWZvoAoOF2gQ"',
+546 silly get     'x-readtime': '12' } ]
+547 verbose etag https://registry.npm.taobao.org/requires-port from cache
+548 verbose get saving requires-port to /Users/foxit/.npm/registry.npm.taobao.org/requires-port/.cache.json
+549 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+550 silly resolveWithNewModule requires-port@1.0.0 checking installable status
+551 silly cache add args [ 'requires-port@1.x.x', null ]
+552 verbose cache add spec requires-port@1.x.x
+553 silly cache add parsed spec Result {
+553 silly cache add   raw: 'requires-port@1.x.x',
+553 silly cache add   scope: null,
+553 silly cache add   escapedName: 'requires-port',
+553 silly cache add   name: 'requires-port',
+553 silly cache add   rawSpec: '1.x.x',
+553 silly cache add   spec: '>=1.0.0 <2.0.0',
+553 silly cache add   type: 'range' }
+554 silly addNamed requires-port@>=1.0.0 <2.0.0
+555 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for requires-port
+556 silly addNameRange { name: 'requires-port',
+556 silly addNameRange   range: '>=1.0.0 <2.0.0',
+556 silly addNameRange   hasData: false }
+557 silly mapToRegistry name requires-port
+558 silly mapToRegistry using default registry
+559 silly mapToRegistry registry https://registry.npm.taobao.org/
+560 silly mapToRegistry data Result {
+560 silly mapToRegistry   raw: 'requires-port',
+560 silly mapToRegistry   scope: null,
+560 silly mapToRegistry   escapedName: 'requires-port',
+560 silly mapToRegistry   name: 'requires-port',
+560 silly mapToRegistry   rawSpec: '',
+560 silly mapToRegistry   spec: 'latest',
+560 silly mapToRegistry   type: 'tag' }
+561 silly mapToRegistry uri https://registry.npm.taobao.org/requires-port
+562 verbose addNameRange registry:https://registry.npm.taobao.org/requires-port not in flight; fetching
+563 verbose get https://registry.npm.taobao.org/requires-port not expired, no request
+564 silly addNameRange number 2 { name: 'requires-port', range: '>=1.0.0 <2.0.0', hasData: true }
+565 silly addNameRange versions [ 'requires-port', [ '1.0.0', '0.0.1', '0.0.0' ] ]
+566 silly addNamed requires-port@1.0.0
+567 verbose addNamed "1.0.0" is a plain semver version for requires-port
+568 silly cache afterAdd requires-port@1.0.0
+569 verbose afterAdd /Users/foxit/.npm/requires-port/1.0.0/package/package.json not in flight; writing
+570 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+571 verbose afterAdd /Users/foxit/.npm/requires-port/1.0.0/package/package.json written
+572 http 304 https://registry.npm.taobao.org/eventemitter3
+573 verbose headers { date: 'Tue, 27 Dec 2016 03:38:24 GMT',
+573 verbose headers   connection: 'keep-alive',
+573 verbose headers   'x-current-requests': '1',
+573 verbose headers   etag: '"8aa8-MOxbeIe4HnybB2GiARhWIQ"',
+573 verbose headers   'x-readtime': '24' }
+574 silly get cb [ 304,
+574 silly get   { date: 'Tue, 27 Dec 2016 03:38:24 GMT',
+574 silly get     connection: 'keep-alive',
+574 silly get     'x-current-requests': '1',
+574 silly get     etag: '"8aa8-MOxbeIe4HnybB2GiARhWIQ"',
+574 silly get     'x-readtime': '24' } ]
+575 verbose etag https://registry.npm.taobao.org/eventemitter3 from cache
+576 verbose get saving eventemitter3 to /Users/foxit/.npm/registry.npm.taobao.org/eventemitter3/.cache.json
+577 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+578 silly resolveWithNewModule eventemitter3@1.2.0 checking installable status
+579 silly cache add args [ 'eventemitter3@1.x.x', null ]
+580 verbose cache add spec eventemitter3@1.x.x
+581 silly cache add parsed spec Result {
+581 silly cache add   raw: 'eventemitter3@1.x.x',
+581 silly cache add   scope: null,
+581 silly cache add   escapedName: 'eventemitter3',
+581 silly cache add   name: 'eventemitter3',
+581 silly cache add   rawSpec: '1.x.x',
+581 silly cache add   spec: '>=1.0.0 <2.0.0',
+581 silly cache add   type: 'range' }
+582 silly addNamed eventemitter3@>=1.0.0 <2.0.0
+583 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for eventemitter3
+584 silly addNameRange { name: 'eventemitter3',
+584 silly addNameRange   range: '>=1.0.0 <2.0.0',
+584 silly addNameRange   hasData: false }
+585 silly mapToRegistry name eventemitter3
+586 silly mapToRegistry using default registry
+587 silly mapToRegistry registry https://registry.npm.taobao.org/
+588 silly mapToRegistry data Result {
+588 silly mapToRegistry   raw: 'eventemitter3',
+588 silly mapToRegistry   scope: null,
+588 silly mapToRegistry   escapedName: 'eventemitter3',
+588 silly mapToRegistry   name: 'eventemitter3',
+588 silly mapToRegistry   rawSpec: '',
+588 silly mapToRegistry   spec: 'latest',
+588 silly mapToRegistry   type: 'tag' }
+589 silly mapToRegistry uri https://registry.npm.taobao.org/eventemitter3
+590 verbose addNameRange registry:https://registry.npm.taobao.org/eventemitter3 not in flight; fetching
+591 verbose get https://registry.npm.taobao.org/eventemitter3 not expired, no request
+592 silly addNameRange number 2 { name: 'eventemitter3', range: '>=1.0.0 <2.0.0', hasData: true }
+593 silly addNameRange versions [ 'eventemitter3',
+593 silly addNameRange   [ '2.0.2',
+593 silly addNameRange     '2.0.1',
+593 silly addNameRange     '2.0.0',
+593 silly addNameRange     '1.2.0',
+593 silly addNameRange     '1.1.1',
+593 silly addNameRange     '1.1.0',
+593 silly addNameRange     '1.0.3',
+593 silly addNameRange     '1.0.2',
+593 silly addNameRange     '1.0.1',
+593 silly addNameRange     '1.0.0',
+593 silly addNameRange     '0.1.6',
+593 silly addNameRange     '0.1.5',
+593 silly addNameRange     '0.1.4',
+593 silly addNameRange     '0.1.3',
+593 silly addNameRange     '0.1.2',
+593 silly addNameRange     '0.1.1',
+593 silly addNameRange     '0.1.0',
+593 silly addNameRange     '0.0.1',
+593 silly addNameRange     '0.0.0' ] ]
+594 silly addNamed eventemitter3@1.2.0
+595 verbose addNamed "1.2.0" is a plain semver version for eventemitter3
+596 silly cache afterAdd eventemitter3@1.2.0
+597 verbose afterAdd /Users/foxit/.npm/eventemitter3/1.2.0/package/package.json not in flight; writing
+598 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+599 verbose afterAdd /Users/foxit/.npm/eventemitter3/1.2.0/package/package.json written
+600 silly fetchNamedPackageData wordwrap
+601 silly mapToRegistry name wordwrap
+602 silly mapToRegistry using default registry
+603 silly mapToRegistry registry https://registry.npm.taobao.org/
+604 silly mapToRegistry data Result {
+604 silly mapToRegistry   raw: 'wordwrap',
+604 silly mapToRegistry   scope: null,
+604 silly mapToRegistry   escapedName: 'wordwrap',
+604 silly mapToRegistry   name: 'wordwrap',
+604 silly mapToRegistry   rawSpec: '',
+604 silly mapToRegistry   spec: 'latest',
+604 silly mapToRegistry   type: 'tag' }
+605 silly mapToRegistry uri https://registry.npm.taobao.org/wordwrap
+606 silly fetchNamedPackageData minimist
+607 silly mapToRegistry name minimist
+608 silly mapToRegistry using default registry
+609 silly mapToRegistry registry https://registry.npm.taobao.org/
+610 silly mapToRegistry data Result {
+610 silly mapToRegistry   raw: 'minimist',
+610 silly mapToRegistry   scope: null,
+610 silly mapToRegistry   escapedName: 'minimist',
+610 silly mapToRegistry   name: 'minimist',
+610 silly mapToRegistry   rawSpec: '',
+610 silly mapToRegistry   spec: 'latest',
+610 silly mapToRegistry   type: 'tag' }
+611 silly mapToRegistry uri https://registry.npm.taobao.org/minimist
+612 silly resolveWithNewModule minimist@0.0.10 checking installable status
+613 silly cache add args [ 'minimist@~0.0.1', null ]
+614 verbose cache add spec minimist@~0.0.1
+615 silly cache add parsed spec Result {
+615 silly cache add   raw: 'minimist@~0.0.1',
+615 silly cache add   scope: null,
+615 silly cache add   escapedName: 'minimist',
+615 silly cache add   name: 'minimist',
+615 silly cache add   rawSpec: '~0.0.1',
+615 silly cache add   spec: '>=0.0.1 <0.1.0',
+615 silly cache add   type: 'range' }
+616 silly addNamed minimist@>=0.0.1 <0.1.0
+617 verbose addNamed ">=0.0.1 <0.1.0" is a valid semver range for minimist
+618 silly addNameRange { name: 'minimist', range: '>=0.0.1 <0.1.0', hasData: false }
+619 silly mapToRegistry name minimist
+620 silly mapToRegistry using default registry
+621 silly mapToRegistry registry https://registry.npm.taobao.org/
+622 silly mapToRegistry data Result {
+622 silly mapToRegistry   raw: 'minimist',
+622 silly mapToRegistry   scope: null,
+622 silly mapToRegistry   escapedName: 'minimist',
+622 silly mapToRegistry   name: 'minimist',
+622 silly mapToRegistry   rawSpec: '',
+622 silly mapToRegistry   spec: 'latest',
+622 silly mapToRegistry   type: 'tag' }
+623 silly mapToRegistry uri https://registry.npm.taobao.org/minimist
+624 verbose addNameRange registry:https://registry.npm.taobao.org/minimist not in flight; fetching
+625 verbose request uri https://registry.npm.taobao.org/wordwrap
+626 verbose request no auth needed
+627 info attempt registry request try #1 at 11:38:23 AM
+628 verbose etag "1c65-CEWEXI+PTOsGBLGXeDlU7g"
+629 http request GET https://registry.npm.taobao.org/wordwrap
+630 verbose get https://registry.npm.taobao.org/minimist not expired, no request
+631 silly addNameRange number 2 { name: 'minimist', range: '>=0.0.1 <0.1.0', hasData: true }
+632 silly addNameRange versions [ 'minimist',
+632 silly addNameRange   [ '1.2.0',
+632 silly addNameRange     '1.1.3',
+632 silly addNameRange     '1.1.2',
+632 silly addNameRange     '1.1.1',
+632 silly addNameRange     '1.1.0',
+632 silly addNameRange     '1.0.0',
+632 silly addNameRange     '0.2.0',
+632 silly addNameRange     '0.1.0',
+632 silly addNameRange     '0.0.10',
+632 silly addNameRange     '0.0.9',
+632 silly addNameRange     '0.0.8',
+632 silly addNameRange     '0.0.7',
+632 silly addNameRange     '0.0.6',
+632 silly addNameRange     '0.0.5',
+632 silly addNameRange     '0.0.4',
+632 silly addNameRange     '0.0.3',
+632 silly addNameRange     '0.0.2',
+632 silly addNameRange     '0.0.1',
+632 silly addNameRange     '0.0.0' ] ]
+633 silly addNamed minimist@0.0.10
+634 verbose addNamed "0.0.10" is a plain semver version for minimist
+635 silly cache afterAdd minimist@0.0.10
+636 verbose afterAdd /Users/foxit/.npm/minimist/0.0.10/package/package.json not in flight; writing
+637 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+638 verbose afterAdd /Users/foxit/.npm/minimist/0.0.10/package/package.json written
+639 http 304 https://registry.npm.taobao.org/wordwrap
+640 verbose headers { date: 'Tue, 27 Dec 2016 03:38:24 GMT',
+640 verbose headers   connection: 'keep-alive',
+640 verbose headers   'x-current-requests': '1',
+640 verbose headers   etag: '"1c65-CEWEXI+PTOsGBLGXeDlU7g"',
+640 verbose headers   'x-readtime': '18' }
+641 silly get cb [ 304,
+641 silly get   { date: 'Tue, 27 Dec 2016 03:38:24 GMT',
+641 silly get     connection: 'keep-alive',
+641 silly get     'x-current-requests': '1',
+641 silly get     etag: '"1c65-CEWEXI+PTOsGBLGXeDlU7g"',
+641 silly get     'x-readtime': '18' } ]
+642 verbose etag https://registry.npm.taobao.org/wordwrap from cache
+643 verbose get saving wordwrap to /Users/foxit/.npm/registry.npm.taobao.org/wordwrap/.cache.json
+644 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+645 silly resolveWithNewModule wordwrap@0.0.3 checking installable status
+646 silly cache add args [ 'wordwrap@~0.0.2', null ]
+647 verbose cache add spec wordwrap@~0.0.2
+648 silly cache add parsed spec Result {
+648 silly cache add   raw: 'wordwrap@~0.0.2',
+648 silly cache add   scope: null,
+648 silly cache add   escapedName: 'wordwrap',
+648 silly cache add   name: 'wordwrap',
+648 silly cache add   rawSpec: '~0.0.2',
+648 silly cache add   spec: '>=0.0.2 <0.1.0',
+648 silly cache add   type: 'range' }
+649 silly addNamed wordwrap@>=0.0.2 <0.1.0
+650 verbose addNamed ">=0.0.2 <0.1.0" is a valid semver range for wordwrap
+651 silly addNameRange { name: 'wordwrap', range: '>=0.0.2 <0.1.0', hasData: false }
+652 silly mapToRegistry name wordwrap
+653 silly mapToRegistry using default registry
+654 silly mapToRegistry registry https://registry.npm.taobao.org/
+655 silly mapToRegistry data Result {
+655 silly mapToRegistry   raw: 'wordwrap',
+655 silly mapToRegistry   scope: null,
+655 silly mapToRegistry   escapedName: 'wordwrap',
+655 silly mapToRegistry   name: 'wordwrap',
+655 silly mapToRegistry   rawSpec: '',
+655 silly mapToRegistry   spec: 'latest',
+655 silly mapToRegistry   type: 'tag' }
+656 silly mapToRegistry uri https://registry.npm.taobao.org/wordwrap
+657 verbose addNameRange registry:https://registry.npm.taobao.org/wordwrap not in flight; fetching
+658 verbose get https://registry.npm.taobao.org/wordwrap not expired, no request
+659 silly addNameRange number 2 { name: 'wordwrap', range: '>=0.0.2 <0.1.0', hasData: true }
+660 silly addNameRange versions [ 'wordwrap', [ '1.0.0', '0.0.3', '0.0.2', '0.0.1' ] ]
+661 silly addNamed wordwrap@0.0.3
+662 verbose addNamed "0.0.3" is a plain semver version for wordwrap
+663 silly cache afterAdd wordwrap@0.0.3
+664 verbose afterAdd /Users/foxit/.npm/wordwrap/0.0.3/package/package.json not in flight; writing
+665 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+666 verbose afterAdd /Users/foxit/.npm/wordwrap/0.0.3/package/package.json written
+667 silly fetchNamedPackageData async
+668 silly mapToRegistry name async
+669 silly mapToRegistry using default registry
+670 silly mapToRegistry registry https://registry.npm.taobao.org/
+671 silly mapToRegistry data Result {
+671 silly mapToRegistry   raw: 'async',
+671 silly mapToRegistry   scope: null,
+671 silly mapToRegistry   escapedName: 'async',
+671 silly mapToRegistry   name: 'async',
+671 silly mapToRegistry   rawSpec: '',
+671 silly mapToRegistry   spec: 'latest',
+671 silly mapToRegistry   type: 'tag' }
+672 silly mapToRegistry uri https://registry.npm.taobao.org/async
+673 silly fetchNamedPackageData mkdirp
+674 silly mapToRegistry name mkdirp
+675 silly mapToRegistry using default registry
+676 silly mapToRegistry registry https://registry.npm.taobao.org/
+677 silly mapToRegistry data Result {
+677 silly mapToRegistry   raw: 'mkdirp',
+677 silly mapToRegistry   scope: null,
+677 silly mapToRegistry   escapedName: 'mkdirp',
+677 silly mapToRegistry   name: 'mkdirp',
+677 silly mapToRegistry   rawSpec: '',
+677 silly mapToRegistry   spec: 'latest',
+677 silly mapToRegistry   type: 'tag' }
+678 silly mapToRegistry uri https://registry.npm.taobao.org/mkdirp
+679 verbose request uri https://registry.npm.taobao.org/mkdirp
+680 verbose request no auth needed
+681 info attempt registry request try #1 at 11:38:23 AM
+682 verbose etag "6b66-E0tW5gdU+5yL7/Km14UeOA"
+683 http request GET https://registry.npm.taobao.org/mkdirp
+684 verbose request uri https://registry.npm.taobao.org/async
+685 verbose request no auth needed
+686 info attempt registry request try #1 at 11:38:23 AM
+687 verbose etag "21175-ESilLgl8ZQ02lx9ruA3jrg"
+688 http request GET https://registry.npm.taobao.org/async
+689 http 304 https://registry.npm.taobao.org/mkdirp
+690 verbose headers { date: 'Tue, 27 Dec 2016 03:38:24 GMT',
+690 verbose headers   connection: 'keep-alive',
+690 verbose headers   'x-current-requests': '1',
+690 verbose headers   etag: '"6b66-E0tW5gdU+5yL7/Km14UeOA"',
+690 verbose headers   'x-readtime': '24' }
+691 silly get cb [ 304,
+691 silly get   { date: 'Tue, 27 Dec 2016 03:38:24 GMT',
+691 silly get     connection: 'keep-alive',
+691 silly get     'x-current-requests': '1',
+691 silly get     etag: '"6b66-E0tW5gdU+5yL7/Km14UeOA"',
+691 silly get     'x-readtime': '24' } ]
+692 verbose etag https://registry.npm.taobao.org/mkdirp from cache
+693 verbose get saving mkdirp to /Users/foxit/.npm/registry.npm.taobao.org/mkdirp/.cache.json
+694 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+695 silly resolveWithNewModule mkdirp@0.5.1 checking installable status
+696 silly cache add args [ 'mkdirp@0.5.x', null ]
+697 verbose cache add spec mkdirp@0.5.x
+698 silly cache add parsed spec Result {
+698 silly cache add   raw: 'mkdirp@0.5.x',
+698 silly cache add   scope: null,
+698 silly cache add   escapedName: 'mkdirp',
+698 silly cache add   name: 'mkdirp',
+698 silly cache add   rawSpec: '0.5.x',
+698 silly cache add   spec: '>=0.5.0 <0.6.0',
+698 silly cache add   type: 'range' }
+699 silly addNamed mkdirp@>=0.5.0 <0.6.0
+700 verbose addNamed ">=0.5.0 <0.6.0" is a valid semver range for mkdirp
+701 silly addNameRange { name: 'mkdirp', range: '>=0.5.0 <0.6.0', hasData: false }
+702 silly mapToRegistry name mkdirp
+703 silly mapToRegistry using default registry
+704 silly mapToRegistry registry https://registry.npm.taobao.org/
+705 silly mapToRegistry data Result {
+705 silly mapToRegistry   raw: 'mkdirp',
+705 silly mapToRegistry   scope: null,
+705 silly mapToRegistry   escapedName: 'mkdirp',
+705 silly mapToRegistry   name: 'mkdirp',
+705 silly mapToRegistry   rawSpec: '',
+705 silly mapToRegistry   spec: 'latest',
+705 silly mapToRegistry   type: 'tag' }
+706 silly mapToRegistry uri https://registry.npm.taobao.org/mkdirp
+707 verbose addNameRange registry:https://registry.npm.taobao.org/mkdirp not in flight; fetching
+708 verbose get https://registry.npm.taobao.org/mkdirp not expired, no request
+709 silly addNameRange number 2 { name: 'mkdirp', range: '>=0.5.0 <0.6.0', hasData: true }
+710 silly addNameRange versions [ 'mkdirp',
+710 silly addNameRange   [ '0.5.1',
+710 silly addNameRange     '0.5.0',
+710 silly addNameRange     '0.4.2',
+710 silly addNameRange     '0.4.1',
+710 silly addNameRange     '0.4.0',
+710 silly addNameRange     '0.3.5',
+710 silly addNameRange     '0.3.4',
+710 silly addNameRange     '0.3.3',
+710 silly addNameRange     '0.3.2',
+710 silly addNameRange     '0.3.1',
+710 silly addNameRange     '0.3.0',
+710 silly addNameRange     '0.2.2',
+710 silly addNameRange     '0.2.1',
+710 silly addNameRange     '0.2.0',
+710 silly addNameRange     '0.1.0',
+710 silly addNameRange     '0.0.7',
+710 silly addNameRange     '0.0.6',
+710 silly addNameRange     '0.0.5',
+710 silly addNameRange     '0.0.4',
+710 silly addNameRange     '0.0.3',
+710 silly addNameRange     '0.0.2',
+710 silly addNameRange     '0.0.1' ] ]
+711 silly addNamed mkdirp@0.5.1
+712 verbose addNamed "0.5.1" is a plain semver version for mkdirp
+713 silly cache afterAdd mkdirp@0.5.1
+714 verbose afterAdd /Users/foxit/.npm/mkdirp/0.5.1/package/package.json not in flight; writing
+715 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+716 verbose afterAdd /Users/foxit/.npm/mkdirp/0.5.1/package/package.json written
+717 http 304 https://registry.npm.taobao.org/async
+718 verbose headers { date: 'Tue, 27 Dec 2016 03:38:24 GMT',
+718 verbose headers   connection: 'keep-alive',
+718 verbose headers   'x-current-requests': '1',
+718 verbose headers   etag: '"21175-ESilLgl8ZQ02lx9ruA3jrg"',
+718 verbose headers   'x-readtime': '329' }
+719 silly get cb [ 304,
+719 silly get   { date: 'Tue, 27 Dec 2016 03:38:24 GMT',
+719 silly get     connection: 'keep-alive',
+719 silly get     'x-current-requests': '1',
+719 silly get     etag: '"21175-ESilLgl8ZQ02lx9ruA3jrg"',
+719 silly get     'x-readtime': '329' } ]
+720 verbose etag https://registry.npm.taobao.org/async from cache
+721 verbose get saving async to /Users/foxit/.npm/registry.npm.taobao.org/async/.cache.json
+722 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+723 silly resolveWithNewModule async@0.9.0 checking installable status
+724 silly cache add args [ 'async@0.9.0', null ]
+725 verbose cache add spec async@0.9.0
+726 silly cache add parsed spec Result {
+726 silly cache add   raw: 'async@0.9.0',
+726 silly cache add   scope: null,
+726 silly cache add   escapedName: 'async',
+726 silly cache add   name: 'async',
+726 silly cache add   rawSpec: '0.9.0',
+726 silly cache add   spec: '0.9.0',
+726 silly cache add   type: 'version' }
+727 silly addNamed async@0.9.0
+728 verbose addNamed "0.9.0" is a plain semver version for async
+729 silly mapToRegistry name async
+730 silly mapToRegistry using default registry
+731 silly mapToRegistry registry https://registry.npm.taobao.org/
+732 silly mapToRegistry data Result {
+732 silly mapToRegistry   raw: 'async',
+732 silly mapToRegistry   scope: null,
+732 silly mapToRegistry   escapedName: 'async',
+732 silly mapToRegistry   name: 'async',
+732 silly mapToRegistry   rawSpec: '',
+732 silly mapToRegistry   spec: 'latest',
+732 silly mapToRegistry   type: 'tag' }
+733 silly mapToRegistry uri https://registry.npm.taobao.org/async
+734 verbose addNameVersion registry:https://registry.npm.taobao.org/async not in flight; fetching
+735 verbose get https://registry.npm.taobao.org/async not expired, no request
+736 silly cache afterAdd async@0.9.0
+737 verbose afterAdd /Users/foxit/.npm/async/0.9.0/package/package.json not in flight; writing
+738 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+739 verbose afterAdd /Users/foxit/.npm/async/0.9.0/package/package.json written
+740 silly fetchNamedPackageData minimist
+741 silly mapToRegistry name minimist
+742 silly mapToRegistry using default registry
+743 silly mapToRegistry registry https://registry.npm.taobao.org/
+744 silly mapToRegistry data Result {
+744 silly mapToRegistry   raw: 'minimist',
+744 silly mapToRegistry   scope: null,
+744 silly mapToRegistry   escapedName: 'minimist',
+744 silly mapToRegistry   name: 'minimist',
+744 silly mapToRegistry   rawSpec: '',
+744 silly mapToRegistry   spec: 'latest',
+744 silly mapToRegistry   type: 'tag' }
+745 silly mapToRegistry uri https://registry.npm.taobao.org/minimist
+746 silly resolveWithNewModule minimist@0.0.8 checking installable status
+747 silly cache add args [ 'minimist@0.0.8', null ]
+748 verbose cache add spec minimist@0.0.8
+749 silly cache add parsed spec Result {
+749 silly cache add   raw: 'minimist@0.0.8',
+749 silly cache add   scope: null,
+749 silly cache add   escapedName: 'minimist',
+749 silly cache add   name: 'minimist',
+749 silly cache add   rawSpec: '0.0.8',
+749 silly cache add   spec: '0.0.8',
+749 silly cache add   type: 'version' }
+750 silly addNamed minimist@0.0.8
+751 verbose addNamed "0.0.8" is a plain semver version for minimist
+752 silly mapToRegistry name minimist
+753 silly mapToRegistry using default registry
+754 silly mapToRegistry registry https://registry.npm.taobao.org/
+755 silly mapToRegistry data Result {
+755 silly mapToRegistry   raw: 'minimist',
+755 silly mapToRegistry   scope: null,
+755 silly mapToRegistry   escapedName: 'minimist',
+755 silly mapToRegistry   name: 'minimist',
+755 silly mapToRegistry   rawSpec: '',
+755 silly mapToRegistry   spec: 'latest',
+755 silly mapToRegistry   type: 'tag' }
+756 silly mapToRegistry uri https://registry.npm.taobao.org/minimist
+757 verbose addNameVersion registry:https://registry.npm.taobao.org/minimist not in flight; fetching
+758 verbose get https://registry.npm.taobao.org/minimist not expired, no request
+759 silly cache afterAdd minimist@0.0.8
+760 verbose afterAdd /Users/foxit/.npm/minimist/0.0.8/package/package.json not in flight; writing
+761 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+762 verbose afterAdd /Users/foxit/.npm/minimist/0.0.8/package/package.json written
+763 silly fetchNamedPackageData qs
+764 silly mapToRegistry name qs
+765 silly mapToRegistry using default registry
+766 silly mapToRegistry registry https://registry.npm.taobao.org/
+767 silly mapToRegistry data Result {
+767 silly mapToRegistry   raw: 'qs',
+767 silly mapToRegistry   scope: null,
+767 silly mapToRegistry   escapedName: 'qs',
+767 silly mapToRegistry   name: 'qs',
+767 silly mapToRegistry   rawSpec: '',
+767 silly mapToRegistry   spec: 'latest',
+767 silly mapToRegistry   type: 'tag' }
+768 silly mapToRegistry uri https://registry.npm.taobao.org/qs
+769 verbose request uri https://registry.npm.taobao.org/qs
+770 verbose request no auth needed
+771 info attempt registry request try #1 at 11:38:24 AM
+772 verbose etag "16329-Z8a4WGD7JuzozHSg+3Rc3Q"
+773 http request GET https://registry.npm.taobao.org/qs
+774 http 304 https://registry.npm.taobao.org/qs
+775 verbose headers { date: 'Tue, 27 Dec 2016 03:38:24 GMT',
+775 verbose headers   connection: 'keep-alive',
+775 verbose headers   'x-current-requests': '1',
+775 verbose headers   etag: '"16329-Z8a4WGD7JuzozHSg+3Rc3Q"',
+775 verbose headers   'x-readtime': '60' }
+776 silly get cb [ 304,
+776 silly get   { date: 'Tue, 27 Dec 2016 03:38:24 GMT',
+776 silly get     connection: 'keep-alive',
+776 silly get     'x-current-requests': '1',
+776 silly get     etag: '"16329-Z8a4WGD7JuzozHSg+3Rc3Q"',
+776 silly get     'x-readtime': '60' } ]
+777 verbose etag https://registry.npm.taobao.org/qs from cache
+778 verbose get saving qs to /Users/foxit/.npm/registry.npm.taobao.org/qs/.cache.json
+779 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+780 silly resolveWithNewModule qs@2.3.3 checking installable status
+781 silly cache add args [ 'qs@~2.3.3', null ]
+782 verbose cache add spec qs@~2.3.3
+783 silly cache add parsed spec Result {
+783 silly cache add   raw: 'qs@~2.3.3',
+783 silly cache add   scope: null,
+783 silly cache add   escapedName: 'qs',
+783 silly cache add   name: 'qs',
+783 silly cache add   rawSpec: '~2.3.3',
+783 silly cache add   spec: '>=2.3.3 <2.4.0',
+783 silly cache add   type: 'range' }
+784 silly addNamed qs@>=2.3.3 <2.4.0
+785 verbose addNamed ">=2.3.3 <2.4.0" is a valid semver range for qs
+786 silly addNameRange { name: 'qs', range: '>=2.3.3 <2.4.0', hasData: false }
+787 silly mapToRegistry name qs
+788 silly mapToRegistry using default registry
+789 silly mapToRegistry registry https://registry.npm.taobao.org/
+790 silly mapToRegistry data Result {
+790 silly mapToRegistry   raw: 'qs',
+790 silly mapToRegistry   scope: null,
+790 silly mapToRegistry   escapedName: 'qs',
+790 silly mapToRegistry   name: 'qs',
+790 silly mapToRegistry   rawSpec: '',
+790 silly mapToRegistry   spec: 'latest',
+790 silly mapToRegistry   type: 'tag' }
+791 silly mapToRegistry uri https://registry.npm.taobao.org/qs
+792 verbose addNameRange registry:https://registry.npm.taobao.org/qs not in flight; fetching
+793 verbose get https://registry.npm.taobao.org/qs not expired, no request
+794 silly addNameRange number 2 { name: 'qs', range: '>=2.3.3 <2.4.0', hasData: true }
+795 silly addNameRange versions [ 'qs',
+795 silly addNameRange   [ '6.3.0',
+795 silly addNameRange     '6.2.1',
+795 silly addNameRange     '5.2.1',
+795 silly addNameRange     '6.2.0',
+795 silly addNameRange     '6.1.0',
+795 silly addNameRange     '6.0.2',
+795 silly addNameRange     '6.0.1',
+795 silly addNameRange     '6.0.0',
+795 silly addNameRange     '5.2.0',
+795 silly addNameRange     '5.1.0',
+795 silly addNameRange     '5.0.0',
+795 silly addNameRange     '4.0.0',
+795 silly addNameRange     '3.1.0',
+795 silly addNameRange     '3.0.0',
+795 silly addNameRange     '2.4.2',
+795 silly addNameRange     '2.4.1',
+795 silly addNameRange     '2.4.0',
+795 silly addNameRange     '2.3.3',
+795 silly addNameRange     '2.3.2',
+795 silly addNameRange     '2.3.1',
+795 silly addNameRange     '2.3.0',
+795 silly addNameRange     '2.2.5',
+795 silly addNameRange     '2.2.4',
+795 silly addNameRange     '2.2.3',
+795 silly addNameRange     '2.2.2',
+795 silly addNameRange     '2.2.1',
+795 silly addNameRange     '2.2.0',
+795 silly addNameRange     '2.1.0',
+795 silly addNameRange     '2.0.0',
+795 silly addNameRange     '1.2.2',
+795 silly addNameRange     '1.2.1',
+795 silly addNameRange     '1.2.0',
+795 silly addNameRange     '1.1.0',
+795 silly addNameRange     '1.0.2',
+795 silly addNameRange     '1.0.1',
+795 silly addNameRange     '1.0.0',
+795 silly addNameRange     '0.6.6',
+795 silly addNameRange     '0.6.5',
+795 silly addNameRange     '0.6.4',
+795 silly addNameRange     '0.6.3',
+795 silly addNameRange     '0.6.2',
+795 silly addNameRange     '0.6.1',
+795 silly addNameRange     '0.6.0',
+795 silly addNameRange     '0.5.6',
+795 silly addNameRange     '0.5.5',
+795 silly addNameRange     '0.5.4',
+795 silly addNameRange     '0.5.3',
+795 silly addNameRange     '0.5.2',
+795 silly addNameRange     '0.5.1',
+795 silly addNameRange     '0.5.0',
+795 silly addNameRange     '0.4.2',
+795 silly addNameRange     '0.4.1',
+795 silly addNameRange     '0.4.0',
+795 silly addNameRange     '0.3.2',
+795 silly addNameRange     '0.3.1',
+795 silly addNameRange     '0.3.0',
+795 silly addNameRange     '0.2.0',
+795 silly addNameRange     '0.1.0',
+795 silly addNameRange     '0.0.7',
+795 silly addNameRange     '0.0.6',
+795 silly addNameRange     '0.0.5',
+795 silly addNameRange     '0.0.4',
+795 silly addNameRange     '0.0.3',
+795 silly addNameRange     '0.0.2',
+795 silly addNameRange     '0.0.1' ] ]
+796 silly addNamed qs@2.3.3
+797 verbose addNamed "2.3.3" is a plain semver version for qs
+798 silly cache afterAdd qs@2.3.3
+799 verbose afterAdd /Users/foxit/.npm/qs/2.3.3/package/package.json not in flight; writing
+800 verbose correctMkdir /Users/foxit/.npm correctMkdir not in flight; initializing
+801 verbose afterAdd /Users/foxit/.npm/qs/2.3.3/package/package.json written
+802 silly loadAllDepsIntoIdealTree Finishing
+803 silly loadIdealTree Finishing
+804 silly currentTree lib
+805 silly idealTree lib
+805 silly idealTree └─┬ http-server@0.9.0
+805 silly idealTree   ├── async@0.9.0
+805 silly idealTree   ├── colors@1.0.3
+805 silly idealTree   ├── corser@2.0.1
+805 silly idealTree   ├── ecstatic@1.4.1
+805 silly idealTree   ├── eventemitter3@1.2.0
+805 silly idealTree   ├── he@0.5.0
+805 silly idealTree   ├── http-proxy@1.16.2
+805 silly idealTree   ├── mime@1.3.4
+805 silly idealTree   ├── minimist@1.2.0
+805 silly idealTree   ├─┬ mkdirp@0.5.1
+805 silly idealTree   │ └── minimist@0.0.8
+805 silly idealTree   ├── opener@1.4.2
+805 silly idealTree   ├─┬ optimist@0.6.1
+805 silly idealTree   │ └── minimist@0.0.10
+805 silly idealTree   ├── portfinder@0.4.0
+805 silly idealTree   ├── qs@2.3.3
+805 silly idealTree   ├── requires-port@1.0.0
+805 silly idealTree   ├── union@0.4.6
+805 silly idealTree   ├── url-join@1.1.0
+805 silly idealTree   └── wordwrap@0.0.3
+806 silly generateActionsToTake Starting
+807 silly install generateActionsToTake
+808 warn checkPermissions Missing write access to /usr/local/lib/node_modules
+809 silly rollbackFailedOptional Starting
+810 silly rollbackFailedOptional Finishing
+811 silly runTopLevelLifecycles Finishing
+812 silly install printInstalled
+813 verbose stack Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+813 verbose stack     at Error (native)
+814 verbose cwd /Users/foxit/百度云同步盘/foxit2/ng2/hello2ng2
+815 error Darwin 15.5.0
+816 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "http-server" "-g"
+817 error node v4.2.1
+818 error npm  v3.10.8
+819 error path /usr/local/lib/node_modules
+820 error code EACCES
+821 error errno -13
+822 error syscall access
+823 error Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+823 error     at Error (native)
+823 error  { [Error: EACCES: permission denied, access '/usr/local/lib/node_modules']
+823 error   errno: -13,
+823 error   code: 'EACCES',
+823 error   syscall: 'access',
+823 error   path: '/usr/local/lib/node_modules' }
+824 error Please try running this command again as root/Administrator.
+825 verbose exit [ -13, true ]

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        body{
+            font-size: 10px;
+            margin: 0;
+        }
+        .progress-bar-warp,.fail-info-wrap{
+            padding: 40px 20px;
+            height: 350px;
+        }
+        .container p{
+            font-size:1.4em;
+            color:  #999;
+        }
+        .ui.progress {
+            position: relative;
+            display: block;
+            max-width: 100%;
+            border: 1px solid #cfcfcf;
+            margin: 20px 0 40px;
+            box-shadow: none;
+            background: #f8f8f8;
+            padding: 0;
+            border-radius: .28571429rem;
+        }
+        .ui.progress .bar {
+            height: 26px;
+            display: block;
+            line-height: 1;
+            width: 0;
+            min-width: 20px;
+            background: #e0e0e0;
+            border-radius: .28571429rem;
+            -webkit-transition: width .1s ease,background-color .1s ease;
+            transition: width .1s ease,background-color .1s ease;
+        }
+        .ui.progress .progress-lab {
+            white-space: nowrap;
+            position: absolute;
+            width: auto;
+            font-size: 1.2em;
+            top: 50%;
+            right: .5em;
+            left: auto;
+            bottom: auto;
+            color: #6e6e70;
+            text-shadow: none;
+            margin-top: -.5em;
+            font-weight: 700;
+            text-align: left;
+        }
+        .badge {
+            display: inline-block;
+            min-width: 10px;
+            padding: 3px 7px;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 1;
+            color: #fff;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            background-color: #399;
+            border-radius: 10px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 6px 12px;
+            margin-bottom: 0;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.42857143;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            -ms-touch-action: manipulation;
+            touch-action: manipulation;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            background-image: none;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+        .btn-success {
+            background-color: #78CD51;
+            border-color: #78CD51;
+            color: #FFFFFF;
+            margin-top: 30px;
+        }
+        .success-info-wrap{
+            text-align: center;
+            padding: 40px 0;
+            height: 350px;
+        }
+        ul {
+            padding-left: 0;
+            margin-top: 50px;
+        }
+        ul li {
+            list-style: none;
+        }
+        .success-info-wrap>ul>li{
+            display: inline-block;
+            width: 32%;
+            border-right: 1px solid #cfcfcf;
+            padding: 15px 0;
+            height: 155px;
+            float: left;
+        }
+        .success-info-wrap>ul>li:last-child{
+            border: none;
+        }
+        .success-info-wrap>ul>li>p{
+            margin: 0 0 20px;
+        }
+        .QR-code{
+            width: 100px;
+            margin: auto;
+        }
+        .social-icons{
+            margin: auto;
+        }
+        .social-icons li {
+            float: left;
+            display: inline;
+            list-style: none;
+            text-indent: -9999px;
+            width: 33%;
+            padding: 35px 0;
+        }
+        .social-icons li > a {
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            display: block;
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            margin: auto;
+        }
+        .social-icons li:hover > a {
+            background-position: 0 -38px;
+        }
+        .social-icons li .facebook {
+            background: url(img/facebook.png) no-repeat;
+        }
+        .social-icons li .twitter {
+            background: url(img/twitter.png) no-repeat;
+        }
+        .social-icons li .linkedin {
+            background: url(img/linkedin.png) no-repeat;
+        }
+        .fail-info-wrap{
+            text-align: center;
+        }
+        .fail-info-wrap h1{
+            margin: 25px 0;
+        }
+        .fail-info-wrap a{
+            text-decoration: none;
+            color: #0068dc;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="progress-bar-warp">
+        <p>Uploading file to Foxit Cloud and creating file</p>
+        <div class="ui progress">
+            <div class="bar" style=" width: 50%;"></div>
+            <div class="progress-lab">50%</div>
+        </div>
+    </div>
+    <div class="success-info-wrap">
+        <p>File Link：www.xxxxxxxxxxxxxxxxxxxxxx</p>
+        <ul>
+            <li>
+                <p>
+                    <span class="badge">1</span>
+                    Manual Share
+                </p>
+                <div>
+                    <button class="btn btn-success">Copy Link</button>
+                </div>
+            </li>
+            <li>
+                <p>
+                    <span class="badge">2</span>
+                    Scan and Share
+                </p>
+                <div>
+                    <a href="#"   >
+                        <img class="QR-code" src="img/5.png" alt=""/>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <p>
+                    <span class="badge">3</span>
+                    Share to Social Media
+                </p>
+                <div>
+                    <ul class="social-icons">
+                        <li><a href="https://www.facebook.com/foxitsoftware"  class="facebook" title="facebook" target="_blank"></a></li>
+                        <li><a href="https://twitter.com/foxitsoftware" class="twitter" title="Twitter" target="_blank"></a></li>
+                        <li><a href="https://www.linkedin.com/company/foxit-corporation" class="linkedin" title="LinkedIn" target="_blank"></a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="fail-info-wrap">
+        <img src="img/fail.png" alt=""/>
+        <h1>Sorry,file sharing failed.</h1>
+        <p>Please <a href="">try again </a>later.</p>
+    </div>
+</div>
+</body>
+</html>
