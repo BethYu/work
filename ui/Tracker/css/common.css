@@ -45,7 +45,18 @@ ul li {
 }
 .dl-horizontal dd {
     margin-left: 180px;
+    overflow:auto;
+    _height:1%
 }
+.dl-horizontal dd>div{
+    display: inline-block;
+    width: 50%;
+    float: left;
+}
+/*.dl-horizontal dd>div:last-child{*/
+    /*width: 45%;*/
+    /*float: right;*/
+/*}*/
 dt, dd {
     line-height: 2.2;
 }
@@ -74,6 +85,14 @@ table thead{
     border-top: 2px dotted #828790;
     padding: 10px 0 20px;
 }
+.table-wrap .caption>.caption-wrap{
+    display: inline-block;
+}
+.table-wrap .caption>.caption-info{
+    float: right;
+    margin-right: 25px;
+    display: inline-block;
+}
 .footer{
     text-align: right;
     margin: 25px;
@@ -81,4 +100,26 @@ table thead{
 .footer>div{
     display: inline-block;
     margin: 0 15px;
+}
+img + a,img{
+   vertical-align: middle;
+}
+img{
+    width: 20px;
+    height: 20px;
+}
+.logining{
+    position: absolute;
+    margin: auto;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.po-re{
+    position: relative;
+}
+.clearfix{
+    overflow:hidden;
+    _zoom:1;
 }
