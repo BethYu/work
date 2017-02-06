@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Cmis File Picker</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/fontawesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="dist/style.default.min.css" />
+	<style type="text/css">
+		html,body{
+			height: 100%;
+		}
+	</style>
+</head>
+<body ng-app="test">
+<cmis
+        url="https://cloud-vagrant.connectedpdf.com/cmis/browser"
+        token="5897d09e0cf207bd865e701a%2Cadmin%40fp.com"
+        path="/User_Homes/ad/mi/admin@fp.com/Reading"
+        is-drm-room="false"
+        show-members="true"
+        message-to-member=""
+        room-link=""
+        membership-type="Owner"
+        lang=""
+        repository = "fxcld"
+        file-picker-modal=""
+        device="foxitReader"
+>
+</cmis>
+<!--<cmis url="http://cmis.vagrant.foxitcloud.com:8006/browser" token="yadong, admin" path="/" cache="3600" ></cmis>-->
+
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="dist/cmis-vendor.min.js"></script>
+
+<!-- dist -->
+<script type="text/javascript" src="dist/cmis-directive.min.js"></script>
+<script type="text/javascript">
+//	function viewDocument(objectId, downloadUrl, indexUrl , fileName, fileSize, fileHash){
+//		console.log (objectId, downloadUrl, indexUrl, fileName, fileSize, fileHash)
+//	}
+
+    angular.module('test', ['UCX.Cmis']);
+</script>
+</body>
+</html>
+
+

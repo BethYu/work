@@ -1,26 +1,36 @@
 html{
-    font-size: 16px;
+  font-size: 16px;
 }
+body,
 button,
 input,
 optgroup,
 select,
 textarea {
-    margin: 0;
-    font: inherit;
+  margin: 0;
+  font: inherit;
 }
 body{
-    font-family: Segoe UI, tahoma, arial, sans-serif;
-    font-size: 0.8em;
-}
-.break-word{
-    word-wrap : break-word ;
+  font-family: Segoe UI, tahoma, arial, sans-serif;
+  font-size: 0.625em;
 }
 ul{
-    padding-left: 0;
+  padding-left: 0;
 }
 ul li {
-    list-style: none;
+  list-style: none;
+}
+p {
+  margin: 0 0 10px;
+}
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis !important;
+}
+.break-word{
+  word-break: break-all;
+  word-wrap: break-word;
 }
 .header li {
     display: inline-block;

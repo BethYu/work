@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Cmis File Picker</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="bower_components/fontawesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="bower_components/angular-toastr/dist/angular-toastr.css" />
+	<link rel="stylesheet" type="text/css" href="bower_components/animate.css/animate.min.css" />
+	<link rel="stylesheet" type="text/css" href="src/style/common.css" />
+	<link rel="stylesheet" type="text/css" href="src/style/tree-style.css" />
+    <link rel="stylesheet" type="text/css" href="src/style/style.css" />
+	<link rel="stylesheet" type="text/css" href="src/theme/desktop.css" />
+	<style type="text/css">
+		html,body{
+			height: 100%;
+		}
+		#cmis-container .hide-c1{
+			display: none;
+		}
+	</style>
+</head>
+<body ng-app="test">
+<cmis
+		url="https://www.vagrant.docoshare.com/browser"
+		token="567b5d9a0cf236027efe9d42%2Cwangwei123%40qq.com"
+		path="/Shared_Homes/wangwei123@qq.com/Rooms/Example Room"
+		show-members="true"
+		base-url="https://www.vagrant.docoshare.com/"
+		message-to-member=""
+		room-link="http://v.doc.sh/room/a9a4fa00-18dc-43c6-aacf-aa6394fd3c7c"
+		repository="fxcld"
+		>
+</cmis>
+
+<script type="text/javascript" src="src/language/de.js"></script>
+<script type="text/javascript" src="src/language/en.js"></script>
+<script type="text/javascript" src="src/language/es.js"></script>
+<script type="text/javascript" src="src/language/fr.js"></script>
+<script type="text/javascript" src="src/language/it.js"></script>
+<script type="text/javascript" src="src/language/jp.js"></script>
+<script type="text/javascript" src="src/language/kr.js"></script>
+<script type="text/javascript" src="src/language/nl.js"></script>
+<script type="text/javascript" src="src/language/pl.js"></script>
+<script type="text/javascript" src="src/language/pt.js"></script>
+<script type="text/javascript" src="src/language/ru.js"></script>
+<script type="text/javascript" src="src/language/zh_CN.js"></script>
+<script type="text/javascript" src="src/language/zh_HK.js"></script>
+<script type="text/javascript" src="src/language/zh_TW.js"></script>
+
+<script type="text/javascript" src="bower_components/FileSaver/FileSaver.min.js"></script>
+<script type="text/javascript" src="bower_components/base64/base64.min.js"></script>
+<script type="text/javascript" src="bower_components/superagent/superagent.js"></script>
+<script type="text/javascript" src="bower_components/smx-cmis/lib/cmis.js"></script>
+<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+<script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script type="text/javascript" src="bower_components/angular-translate/angular-translate.js"></script>
+<script type="text/javascript" src="bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
+<script type="text/javascript" src="lib/ng-context-menu.js"></script>
+<script type="text/javascript" src="bower_components/angular-file-model/angular-file-model.js"></script>
+<script type="text/javascript" src="bower_components/clipboard/dist/clipboard.js"></script>
+<script type="text/javascript" src="bower_components/ngclipboard/dist/ngclipboard.js"></script>
+<script type="text/javascript" src="bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js"></script>
+<script type="text/javascript" src="bower_components/angular-animate/angular-animate.js"></script>
+
+
+
+<!-- develop -->
+<script type="text/javascript" src="src/cmis-directive.js"></script>
+<script type="text/javascript" src="src/service.js"></script>
+<script type="text/javascript" src="src/controllers.js"></script>
+<script type="text/javascript" src="src/models.js"></script>
+<script type="text/javascript" src="src/main-controller.js"></script>
+<script type="text/javascript" src="src/modal-controller.js"></script>
+<script type="text/javascript" src="src/filter.js"></script>
+<script type="text/javascript" src="src/directives/file-dropzone.js"></script>
+<script type="text/javascript" src="src/directives/drag-and-drop.js"></script>
+
+<script type="text/javascript">
+	//	function viewDocument(objectId, downloadUrl, indexUrl , fileName, fileSize, fileHash){
+	//		console.log (objectId, downloadUrl, indexUrl, fileName, fileSize, fileHash)
+	//	}
+
+	angular.module('test', ['UCX.Cmis']);
+
+</script>
+</body>
+</html>
