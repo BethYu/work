@@ -9,6 +9,8 @@ select,
 textarea {
   margin: 0;
   font: inherit;
+    font-weight: 300;
+
 }
 body{
   font-family: Segoe UI, tahoma, arial, sans-serif;
