@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>panel</title>
+    <link rel="stylesheet" href="css/cDRM.css"/>
+</head>
+<body>
+<div class="main-container">
+    <div class="panel-header">
+        <span class="pull-left"> < </span>
+        Protect Document
+    </div>
+    <div class="panel-container">
+        <p>
+            A PDF file can have different security permissions for each user.Please enter the e-mail addresses of users in the Read and Change boxes.
+        </p>
+        <div class="edit-read-wrap">
+            <p>Read:</p>
+            <div>
+                <textarea maxlength="" id="" class="form-control " rows="4" placeholder="User with Read permission can read this document, but cannot change, print or copy content."></textarea>
+            </div>
+        </div>
+        <div class="edit-change-wrap">
+            <p>Change:</p>
+            <div>
+                <textarea maxlength="" id="" class="form-control " rows="4" placeholder="User with Read permission can read edit,copy content form,and save change to this document,but cannot  print content."></textarea>
+            </div>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input class="checkbox-left" type="checkbox" value="">
+                <div>
+                Upload this file to Foxit servers and send a link to these users via email and system notification
+                </div>
+            </label>
+        </div>
+        <div class="link-wrap">
+            <p>
+                <a href="" class="ellipsis translations" title="...">advance_options</a>
+            </p>
+        </div>
+        <div class="panel-footer">
+            <button class="btn btn-sub" type="button">
+                OK
+            </button>
+        </div>
+        <div class="prompt-has-pho m-tb10 clearfix">
+            <div class="prompt-pho">
+                <img src="images/protect.png" alt=""/>
+            </div>
+            <div class="prompt-text">
+                Accesss to this document has been restricted to certain people.
+            </div>
+        </div>
+        <div class="active-list-warp">
+            <ul>
+                <li>
+                    <a href="">
+                        Save offline copy
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Remove Security
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Revoke Document
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="user-rightes-header">
+            <span>Users and rights(<bt>2</bt>)</span>
+            <div class="pull-right">
+                <img src="images/add-user.png" alt=""/>
+            </div>
+        </div>
+        <div class="user-rightes-list">
+            <ul>
+                <li class="user-list-warp active">
+                    <span>
+                        User@foxitsoftware.com
+                    </span>
+                    <div class="click-icon display-in-b pull-right">
+                        <img class="icon-up" src="images/up.png" alt=""/>
+                        <img class="icon-down hide" src="images/down.png" alt=""/>
+                    </div>
+                    <ul class="rightes-list-warp">
+                        <li>
+                            View Document
+                        </li>
+                        <li>
+                            Printing
+                        </li>
+                        <li>
+                            Changing the Document
+                        </li>
+                        <li>
+                            Document Assembly
+                        </li>
+                        <li>
+                            Content Copying
+                        </li>
+                        <li>
+                            content Copying for Accessibility
+                        </li>
+                        <div class="link-warp">
+                            <a href="">Edit</a>
+                            <a href="">Revoke</a>
+                        </div>
+                    </ul>
+                </li>
+                <li class="user-list-warp ">
+                    <span>
+                        User@foxitsoftware.com
+                    </span>
+                    <div class="click-icon display-in-b pull-right">
+                        <img class="icon-up hide" src="images/up.png" alt=""/>
+                        <img class="icon-down" src="images/down.png" alt=""/>
+                    </div>
+                    <ul class="rightes-list-warp hide">
+                        <li>
+                            View Document
+                        </li>
+                        <li>
+                            Printing
+                        </li>
+                        <li>
+                            Changing the Document
+                        </li>
+                        <li>
+                            Document Assembly
+                        </li>
+                        <li>
+                            Content Copying
+                        </li>
+                        <li>
+                            content Copying for Accessibility
+                        </li>
+                        <div class="link-warp">
+                            <a href="">Edit</a>
+                            <a href="">Revoke</a>
+                        </div>
+                    </ul>
+                </li>
+                <li class="user-list-warp ">
+                    <span>
+                        User@foxitsoftware.com
+                    </span>
+                    <div class="click-icon display-in-b pull-right">
+                        <img class="icon-up hide" src="images/up.png" alt=""/>
+                        <img class="icon-down" src="images/down.png" alt=""/>
+                    </div>
+                    <ul class="rightes-list-warp hide">
+                        <li>
+                            View Document
+                        </li>
+                        <li>
+                            Printing
+                        </li>
+                        <li>
+                            Changing the Document
+                        </li>
+                        <li>
+                            Document Assembly
+                        </li>
+                        <li>
+                            Content Copying
+                        </li>
+                        <li>
+                            content Copying for Accessibility
+                        </li>
+                        <div class="link-warp">
+                            <a href="">Edit</a>
+                            <a href="">Revoke</a>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script>
+    $(function(){
+        $('.user-list-warp').on('click',function(){
+            $(this).find('.icon-up,.icon-down').toggleClass('hide');
+            $(this).find('.rightes-list-warp').toggleClass('hide');
+            $(this).toggleClass('active');
+        });
+    })
+
+</script>
+</body>
+</html>
