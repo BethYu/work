@@ -4,368 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title></title>
-    <style type="text/css">
-        * {
-            -webkit-box-sizing: border-box;
-            -moz-box-sizing: border-box;
-            box-sizing: border-box;
-        }
-        html{
-            height:100%;
-            width:100%;
-            font-size: 16px;
-        }
-        button,
-        input,
-        optgroup,
-        select,
-        textarea {
-            margin: 0;
-            font: inherit;
-        }
-        body {
-            min-width: 250px;
-            height:100%;
-            width:100%;
-            padding: 0;
-            margin: 0;
-            font-family: Arial,sans-serif,Microsoft YaHei;
-            font-size: 0.625em;
-            overflow: auto;
-        }
-        ul{
-            padding-left: 0;
-            margin: 0;
-        }
-        ul li {
-            list-style: none;
-        }
-        p {
-            margin: 0 0 10px;
-        }
-        .ellipsis {
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis !important;
-        }
-        .break-word{
-            word-break: break-all;
-            word-wrap: break-word;
-        }
-        .clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
-        a:hover {
-            /*text-decoration: underline;*/
-            cursor: pointer;
-        }
-        a:link, a:visited {
-            text-decoration: none;
-        }
-        .hide{
-            display: none;
-        }
-        .mg-10 {
-            margin: 10px 0;
-        }
-        .main-container{
-            padding: 10px;
-        }
-        /*index*/
-        .index-panel-wrap ul.panel-list li h2 {
-            font-size: 1em;
-            font-weight: normal;
-            margin-top: 0;
-        }
-        .index-panel-wrap ul.panel-list li h2 a>*{
-            vertical-align:middle;
-        }
-        .index-panel-wrap ul.panel-list li h2 a,.section-header a{
-            display: block;
-        }
-        .index-panel-wrap ul.panel-list li h2 a img{
-            width: 32px;
-        }
-        .panel-list-name{
-            overflow: hidden;
-            text-overflow: ellipsis;
-            font-size: 1.4em;
-            color: #666;
-        }
-        /*invite participant*/
-        .section-header{
-            padding-bottom: 10px;
-        }
-        .section-header a>span{
-            margin-top: 3px;
-            display: inline-block;
-        }
-        .section-header a>img{
-            float: right;
-        }
-        #invite-textarea {
-            height: auto;
-            background: #F7F7F7;
-            border: none;
-            color: #000;
-        }
-        .form-control {
-            outline: none;
-            display: block;
-            width: 100%;
-            height: 34px;
-            padding: 6px 12px;
-            font-family: Arial,sans-serif,Microsoft YaHei;
-            line-height: 1.42857143;
-            color: #555;
-            background-color: #fff;
-            background-image: none;
-            border: 1px solid #ccc;
-            /* border-radius: 4px; */
-        }
-        .add-partake{
-            color: #333;
-            font-size: 1.2em;
-        }
-        .btn {
-            outline: none;
-            display: inline-block;
-            padding: 2px 8px;
-            margin-bottom: 0;
-            font-size: 1em;
-            font-weight: 400;
-            line-height: 1.42857143;
-            text-align: center;
-            white-space: nowrap;
-            vertical-align: middle;
-            -ms-touch-action: manipulation;
-            touch-action: manipulation;
-            cursor: pointer;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            background-image: none;
-            border: 1px solid transparent;
-            /* border-radius: 4px; */
-        }
-        .pull-right {
-            float: right;
-        }
-        .pull-left {
-            float: left;
-        }
-        .btn-default {
-            color: #fff;
-            background-color: #10adf3;
-            border-color: #10adf3;
-        }
-        .icon-spinner::before {
-            position: absolute;
-            content: '';
-            margin: -0.2em -0.5em;
-            width: 0.6em;
-            height: 0.6em;
-            border-radius: 500rem;
-            border: 0.2em dotted rgba(0, 0, 0, 0.15);
-        }
-
-        .icon-spinner::after {
-            position: absolute;
-            content: '';
-            margin: -0.2em -0.5em;
-            width: 0.6em;
-            height: 0.6em;
-            -webkit-animation: button-spin .6s linear;
-            animation: button-spin .6s linear;
-            -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-            border-radius: 500rem;
-            border-color: #FFF transparent transparent;
-            border-style: dotted;
-            border-width: .2em;
-            box-shadow: 0 0 0 1px transparent;
-        }
-        @-webkit-keyframes button-spin {
-            from {
-                -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-            }
-
-            to {
-                -webkit-transform: rotate(360deg);
-                transform: rotate(360deg);
-            }
-        }
-
-        @keyframes button-spin {
-            from {
-                -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-            }
-
-            to {
-                -webkit-transform: rotate(360deg);
-                transform: rotate(360deg);
-            }
-        }
-        b {
-            display: inline-block;
-            width: 12px;
-            height: 12px;
-            vertical-align: middle;
-        }
-        #invite-loading::before, #invite-loading::after {
-            margin: 0 -0.5em;
-        }
-        .color-gray {
-            color: #bfbfbf;
-        }
-        .add-partake .textarea-wrap p{
-            margin-top: 10px;
-        }
-        #invite-textarea::selection {
-            background: #b1e1f6;
-        }
-        /*Participant list*/
-        .section img{
-            width: 17px;
-            height: 17px;
-        }
-        .participant-list>ul>li{
-            margin: 10px 0;
-            padding: 3px 3px;
-        }
-        .participant-list li>*{
-            vertical-align:middle;
-        }
-        .participant-list li>.badge{
-
-        }
-        .badge{
-            display: inline-block;
-            min-width: 10px;
-            padding: 2px 5px;
-            font-size: 0.8em;
-            line-height: 1;
-            color: #fff;
-            text-align: center;
-            white-space: nowrap;
-            vertical-align: baseline;
-            border-radius: 10px;
-            background: #ff6c60;
-        }
-        .participant-name{
-            display: inline-block;
-            width: 80%;
-        }
-        .participant-list>ul>li.active{
-            background: #fffbf6;
-        }
-        .participant-list>ul>li.active li{
-            margin: 12px 5px;
-        }
-        .danger-color{
-            color: #FF6666;
-        }
-        .participant-list>ul>li.active .active-list img{
-            width: 14px;
-            height: 14px;
-        }
-        .participant-list>ul>li.user-off{
-            color: #bfbfbf;
-        }
-        .section-footer{
-            position: fixed;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: 1002;
-        }
-        .section-footer{
-            padding: 5px 25px;
-            border-top: 1px solid #ddd;
-            background: #fff;
-        }
-        .section-footer>.btn{
-            width: 100%;
-            margin: 10px 0;
-        }
-        .btn-sub {
-            color: #10adf3;
-            background-color: #fff;
-            border-color: #10adf3;
-            font-size: 1.6em;
-        }
-        .btn-sub + .btn-sub{
-            margin-top: 0;
-        }
-        .section{
-            margin-bottom:110px;
-        }
-        /*prompt-wrap*/
-        .prompt-wrap{
-            border: 1px solid #ddd;
-            padding: 8px 20px 8px 8px;
-            position: relative;
-            border-radius: 3px;
-            line-height: 1.6;
-            margin-bottom: 15px;
-        }
-        .prompt-wrap>img{
-            position: absolute;
-            right: 0;
-            top: 0;
-            cursor: pointer;
-        }
-        .prompt-wrap>a{
-            color: #2da2fb;
-            text-decoration: underline;
-        }
-        /*add-partake-area*/
-        .add-partake-area{
-            border: 1px solid #ddd;
-            border-radius: 3px;
-            background: #f7f7f7;
-            position: relative;
-        }
-        .add-partake-area .add-partake-textarea{
-            height: auto;
-            border: none;
-            color: #000;
-        }
-        .arrow-white {
-            border-color: transparent transparent #ddd ;
-        }
-        .add-partake-area>img{
-            cursor: pointer;
-            margin: 3px;
-        }
-        .arrow {
-            border-style: solid;
-            position: absolute;
-            transition: all 0.25s ease 0s;
-            width: 0;
-            height: 0;
-            z-index: 10;
-            opacity: 1;
-            border-width: 8px;
-            right: 5px;
-            top: -16px;
-        }
-        .arrow:after {
-            content: " ";
-            border-style: solid;
-            position: absolute;
-            transition: all 0.25s ease 0s;
-            width: 0;
-            height: 0;
-            z-index: 10;
-            opacity: 1;
-            border-width: 8px;
-            top: -7px;
-            margin-left: -8px;
-            border-color: transparent transparent #fff;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/style.css"/>
     <style>
         body[lang="ja-JP"] {
             font-family: "Yu Gothic", Meiryo, "meiryo UI";
@@ -375,7 +14,7 @@
 <body>
 <div class="main-container">
 
-    <div class="index-panel-wrap hide">
+    <div class="index-panel-wrap">
         <ul class="panel-list">
             <li>
                 <h2>
@@ -420,18 +59,46 @@
         <div class="prompt-wrap mg-10">
             你已添加用户进行审阅，可以马上进行 <a>批注</a> 操作！
             <img src="images/close.png" alt=""/>
-
         </div>
-        <div class="add-partake mg-10 clearfix hide">
+        <div class="prompt-wrap mg-10 yellow">
+            <div class="color-yellow" >
+                Failed to initiate a review.
+            </div>
+            Please try again.
+            <img src="images/close.png" alt=""/>
+        </div>
+        <div class="add-partake mg-10 clearfix ">
             <p>设置可参与cReview人</p>
             <div class="textarea-wrap">
                 <textarea id="invite-textarea" maxlength="500" class="form-control" rows="4" placeholder="example@cpdf.com,example@foxit.com"></textarea>
-                <p class="text-muted color-gray">Use comma(,) to separate email addresses.</p>
+                <div class="mg-10 color-59">
+                    <label>
+                        <input class="checkbox-left" type="checkbox" value="">
+                        Upload file and send a notification
+                    </label>
+                </div>
             </div>
             <button class="btn btn-default pull-right" id="invite-btn" type="button">
                 <b class="icon-spinner" id="invite-loading"></b>
                 <span class="">邀请参与</span>
             </button>
+        </div>
+        <div class="active-list-warp">
+            <p>
+                Document is in a review,you can:
+            </p>
+            <ul>
+                <li>
+                    <a href="">
+                        Stop Review
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        View review information
+                    </a>
+                </li>
+            </ul>
         </div>
         <div class="participant-list-warp mg-10">
             <p>参与者：
@@ -459,7 +126,10 @@
                     <li class="user-on active">
                         <img src="images/user-on.png" alt=""/>
                         <span class="participant-name ellipsis" title="name">Chriatina</span>
-                        <span class="badge pull-right">3</span>
+                        <div class="participant-avtive-wrap pull-right">
+                            <img class="delete-icon " src="images/delete.png" alt=""/>
+                            <span class="badge ">3</span>
+                        </div>
                         <ul class="active-list">
                             <li>
                                 <img src="images/review-makeup-text216.png" alt=""/>
@@ -478,7 +148,9 @@
                     <li class="user-on active">
                         <img src="images/user-on.png" alt=""/>
                         <span class="participant-name ellipsis" title="name">Chriatina</span>
-                        <img src="images/unsuccessful.png" alt=""/>
+                        <div class="participant-avtive-wrap pull-right">
+                            <img src="images/unsuccessful.png" alt=""/>
+                        </div>
                         <ul class="active-list">
                             <li>
                                 <img src="images/review-makeup-text216.png" alt=""/>
@@ -506,11 +178,22 @@
             </div>
         </div>
         <div class="section-footer">
-            <button class="btn btn-sub"  type="button">
-                Stop
-            </button>
-            <button class="btn btn-sub"  type="button">
-                Dashboard
+            <div class="btn-group dropup">
+                <button class="btn btn-sub btu-text ellipsis" type="button">
+                    Check Comments
+                </button>
+                <button class="btn btn-sub btu-icon" type="button">
+                   ^
+                </button>
+                <ul role="menu" class="btn-dropdown-menu">
+                    <li>Action</li>
+                    <li>Another action</li>
+                    <li>Something else here</li>
+                    <li>Separated link</li>
+                </ul>
+            </div>
+            <button class="btn btn-sub ellipsis"  type="button">
+                Publish Comments
             </button>
         </div>
     </div>
