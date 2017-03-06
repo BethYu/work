@@ -23,8 +23,9 @@ body {
     padding: 0;
     margin: 0;
     font-family: Arial,sans-serif,Microsoft YaHei;
-    font-size: 0.625em;
+    font-size: 0.685em;
     overflow: auto;
+	background-color: #fff;
 }
 ul{
     padding-left: 0;
@@ -66,6 +67,9 @@ p {
     margin: 10px 0;
 }
 /*custom policy start*/
+#add-user-attention{
+    color: red;
+}
 
 .custom-policy-main-container{
     padding: 38px 38px 15px;
@@ -543,3 +547,171 @@ select.form-control.input-sm{
     border: 1px solid transparent;
 }
 /* panel end*/
+/*prompt-wrap atart*/
+.custom-policy-main-container .prompt-wrap {
+    background-color: #f3dfdf;
+    border: 1px solid #f3dfdf;
+    color: #ad4b49;
+    padding: 9px 24px 9px 9px;
+    position: relative;
+    border-radius: 3px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+
+}
+.custom-policy-main-container .prompt-wrap > img {
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    cursor: pointer;
+    float: right;
+    vertical-align: middle;
+}
+/*prompt-wrap*/
+.prompt-wrap {
+    border: 1px solid #ddd;
+    padding: 8px 20px 8px 8px;
+    position: relative;
+    border-radius: 3px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.prompt-wrap > img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.prompt-wrap > a {
+    color: #2da2fb;
+    text-decoration: underline;
+}
+
+.prompt-wrap.yellow {
+    border: 1px solid #ffce97;
+}
+
+.color-yellow {
+    color: #ff6200;
+}
+.color-green {
+    color: #339933;
+}
+/*prompt-wrap end*/
+
+/*encryption-container start*/
+
+.encryption-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    text-align: center;
+    background-color: #fff;
+    color: #909090;
+    font-size: 1.2em;
+}
+.encryption-container img{
+    width: 64px;
+    height: 64px;
+}
+.encryption-container .encryption-wrap{
+    position: absolute;
+    height: 150px;
+    top: -50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 0 40px;
+}
+.encryption-container .encryption-wrap p{
+    margin: 20px 0;
+}
+.main-container-dialog{
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	padding-bottom: 80px;
+}
+
+/*end-container end*/
+
+/*round progress bar start*/
+.round-progress-wrap .icon-spinner::before {
+    position: absolute;
+    content: '';
+    margin: -0.2em -0.5em;
+    width: 5em;
+    height: 5em;
+    border-radius: 500rem;
+    border: 0.6em solid rgba(0, 0, 0, 0.15);
+}
+
+.round-progress-wrap .icon-spinner::after {
+    position: absolute;
+    content: '';
+    margin: -0.2em -0.5em;
+    width: 5em;
+    height: 5em;
+     -webkit-animation: button-spin 1s linear;
+     animation: button-spin 1s linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    border-radius: 500rem;
+    border-color: #FFF transparent transparent;
+    border-style: solid;
+    border-width: .6em;
+    box-shadow: 0 0 0 1px transparent;
+}
+.round-progress-wrap .icon-spinner.spinner-block::after{
+    border-color: #2dccfc transparent transparent;
+}
+@-webkit-keyframes button-spin {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes button-spin {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.round-progress-wrap b {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin-right: 60px;
+    vertical-align: middle;
+}
+.round-progress-text{
+    position: absolute;
+    left: 40%;
+    top: 25px;
+    color: #2dccfc;
+    font-size: 1.35em;
+}
+.round-progress-wrap{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*round progress bar end*/
