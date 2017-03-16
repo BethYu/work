@@ -1,0 +1,105 @@
+*{
+    font-family: Segoe UI;
+    font-size: 14px;
+    color: #000000;
+}
+.text-center{
+    text-align: center;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis !important;
+}
+.container-box{
+    margin: 50px auto;
+    width: 660px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+}
+.header-logo>img.logo{
+    width: 150px;
+}
+.header-logo>img.logo-back{
+    position: absolute;
+    top: -1px;
+    right: -3px;
+}
+.header-logo{
+    position: relative;
+    padding: 15px 25px;
+    border-bottom: 3px solid #f48a35;
+}
+.body-mes{
+    padding: 35px 40px 5px;
+}
+.mb-50{
+    margin-bottom: 50px;
+}
+.body-mes p{
+    margin-bottom: 12px;
+}
+.body-mes .mes-header{
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff9933;
+    margin-bottom: 32px;
+}
+.body-mes .mes-content{
+    line-height: 26px;
+    font-size: 14px;
+    color: #000;
+}
+.body-mes .doc-mes-wrap{
+    border: 1px solid #ffcd9c;
+    background-color: #fff4e9;
+    padding: 15px;
+}
+.body-mes .doc-mes-wrap>*{
+    display: inline-block;
+    float: left;
+}
+.body-mes .doc-mes-wrap>img{
+    width: 75px;
+    height: 95px;
+}
+.body-mes .doc-mes-wrap>.text-doc{
+    margin: 11.5px 20px;
+    width: 79%;
+}
+.body-mes .doc-mes-wrap>.text-doc>*{
+    margin-bottom: 10px;
+}
+.title-doc{
+    color: #ff9933;
+}
+.body-end{
+    padding-top: 20px;
+}
+.body-end>p{
+    font-size: 12px;
+    color: #333;
+}
+.text-blod{
+    font-weight: bold;
+}
+.footer-mes{
+    background-color: #f6f6f6;
+    color: #b2b2b2;
+    height: 26px;
+    line-height: 26px;
+    font-size: 12px;
+}
+.footer-mes span{
+    border: 1px solid #b0b0b0;
+    border-radius: 50%;
+    padding: 0 2px;
+    color: #b0b0b0;
+}
