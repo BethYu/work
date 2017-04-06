@@ -4,11 +4,31 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="css/cDRM.css"/>
+    <!--[if IE]>
+    <style type="text/css">
+        .round-progress-text{
+            position: absolute;
+            left: 20px !important;
+            top: 25px;
+            color: #2dccfc;
+            font-size: 1.35em;
+        }
+        .encryption-container .encryption-wrap .round-progress-wrap p{
+            margin: 20px 0px 0 0px !important;
+        }
+    </style>
+    <![endif]-->
 </head>
 <body>
+<div style="z-index: 99999999;position: absolute;" class="spinner"><i></i></div>
 <div class="main-container">
     <section class="encryption-container">
         <div class="encryption-wrap">
+            <div class="circle">
+                <div class="pie_left"><div class="left"></div></div>
+                <div class="pie_right"><div class="right"></div></div>
+                <div class="mask"><span>0</span>%</div>
+            </div>
             <div class="round-progress-wrap">
                 <b class="icon-spinner spinner-block"></b>
                 <span class="round-progress-text">
@@ -21,5 +41,21 @@
         </div>
     </section>
 </div>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script>
+    $(function() {
+        $('.circle').each(function(index, el) {
+            var num = $(this).find('span').text() * 3.6;
+            if (num<=180) {
+                $(this).find('.right').css('transform', "rotate(" + num + "deg)");
+            } else {
+                $(this).find('.right').css('transform', "rotate(180deg)");
+                $(this).find('.left').css('transform', "rotate(" + (num - 180) + "deg)");
+            };
+        });
+
+    });
+
+</script>
 </body>
 </html>

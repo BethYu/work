@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title></title>
     <link rel="stylesheet" href="css/cDRM.css"/>
 </head>
@@ -14,12 +15,13 @@
         <div class="user-rightes-header vertical-align-m">
             <span>User and Rightes</span>
             <div class="pull-right">
+                <img src="images/select%20all_16.png" alt=""/>
                 <img src="images/add_16.png" alt=""/>
                 <img src="images/remove.png" alt=""/>
             </div>
         </div>
         <div class="select-wrap">
-            <ul>
+            <ul id="userList">
                 <li>User@123.com</li>
                 <li class="checked">User@123.com</li>
                 <li>User@123.com</li>
@@ -33,8 +35,19 @@
             <span>
                 Rights for User@123.com
             </span>
-            <div class="pull-right">
-                <img src="images/wenhao_16.png" alt=""/>
+            <div class="display-in-b">
+                <img class="incon-wenhao" src="images/wenhao_16.png" alt=""/>
+            </div>
+        </div>
+        <div class="checkbox-warp m-b10 vertical-align-m">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">
+                    Full Control
+                    <div class="display-in-b">
+                        <img class="incon-wenhao" src="images/wenhao_16.png" alt=""/>
+                    </div>
+                </label>
             </div>
         </div>
         <div>
@@ -73,14 +86,12 @@
                     <label>
                         <input type="checkbox" value="">
                         Content expiration after the following dutation(days):
-                        <select class="form-control input-sm">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                        </select>
                     </label>
                 </div>
-
+                <div class="date-wrap">
+                    <span class="input-lable">Start:</span>
+                    <input class="form-control" type="date" value="2014-01-13"/>
+                </div>
                 <div class="checkbox">
                     <label>
                         <input type="checkbox" value="">
@@ -97,16 +108,16 @@
         </div>
     </div>
     <p class="text-info">
-        There are <a href="#" class="col-10adf3">3</a> permission request pending.
+        Options:
     </p>
     <div>
         <div class="checkbox-warp">
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" value="">
-                    Send notificationsts to these users
-                </label>
-            </div>
+            <!--<div class="checkbox">-->
+                <!--<label>-->
+                    <!--<input type="checkbox" value="">-->
+                    <!--Send notificationsts to these users-->
+                <!--</label>-->
+            <!--</div>-->
 
             <div class="checkbox">
                 <label>
@@ -115,11 +126,6 @@
                 </label>
             </div>
         </div>
-    </div>
-    <div class="link-wrap">
-        <p>
-            <a href="" class="ellipsis" title="...">Save as template Save as template</a>
-        </p>
     </div>
     <div class="footer-warp">
         <button class="btn btn-default " type="button">
@@ -147,10 +153,31 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button class="btn btn-default" type="button">OK</button>
+                <button class="btn btn-default ellipsis" type="button">dsaf dsaf fasf saf sdafsa</button>
+                <button class="btn btn-default ellipsis" type="button">dsaf dsaf fasf saf sdafsa</button>
+                <button class="btn btn-default ellipsis" type="button">dsaf dsaf fasf saf sdafsa</button>
+                <button class="btn btn-default ellipsis" type="button">dsaf dsaf fasf saf sdafsa</button>
             </div>
         </div>
     </div>
 </div>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="scripts/utils.js"></script>
+<script src="scripts/plugin_api.js"></script>
+<script src="scripts/protection.js"></script>
+<script src="scripts/htmlView.js"></script>
+<script src="scripts/protection_plugin.js"></script>
+<script>
+	$(function() {
+		$('#userList').on('click', '>li', function(){
+			alert($(this).text());
+		});
+		$('.btn-default').on('click', function () {
+
+			FX.app.sendMessage({type: "advance", message: "success"});
+			FX.app.closeDialog();
+		})
+	});
+</script>
 </body>
 </html>
