@@ -150,6 +150,17 @@
             transform:rotate(360deg);
         }
     }
+    p::-webkit-input-placeholder {
+      color: #000;
+      background: red;
+      border: 1px solid #000;
+    }
+    p:empty {
+      color: #999;
+    }
+    p:empty::before {
+      content: "Empty";
+    }
 </style>
 <div class="logo-container-1">
     <div class="logo-border-wrap-1">
@@ -161,9 +172,18 @@
         <div class="logo-border-7"></div>
     </div>
 </div>
-
+<input type="text" id="t1" />
+<span id="l1"></span>
+<p contenteditable>vdsafasfdsa</p>
 <script src="js/jquery.js"></script>
 <script src="js/nest.min.js"></script>
-
+<script type="text/javascript">
+  document.getElementById("t1").oninput = function () {
+    document.getElementById("l1").innerHTML = document.getElementById("t1").value.length;
+  }
+  document.getElementById("t1").onpropertychange = function () {
+    document.getElementById("l1").innerHTML = document.getElementById("t1").value.length;
+  }
+</script>
 </body>
 </html>

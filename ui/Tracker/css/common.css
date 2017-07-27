@@ -65,6 +65,9 @@ p {
     width: 50%;
     float: left;
 }
+.dl-horizontal dd>p{
+  line-height: 1.4;
+}
 /*.dl-horizontal dd>div:last-child{*/
     /*width: 45%;*/
     /*float: right;*/

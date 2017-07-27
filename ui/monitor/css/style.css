@@ -431,39 +431,46 @@ li.legendColorBox {
     padding-left: 55px;
 }
 
-.icon-host-simple-l {
+.icon-host-simple-l>.icon-img {
     background: url(../images/icon_database.png) no-repeat center scroll;
     width: 100px;
     height: 55px;
     line-height: 55px;
 }
 
-.icon-host-simple-m {
-    background: url(../images/icon_database.png) no-repeat center scroll;
-    width: 100%;
-    height: 55px;
-    line-height: 55px;
-}
-
-.icon-host-simple-s {
+.icon-host-simple-s>.icon-img {
     background: url(../images/icon_database.png) no-repeat center scroll;
     width: 100px;
     height: 55px;
     line-height: 55px;
 }
 
-.text-r {
+.icon-host-simple-m>.icon-img {
+    background: url(../images/icon_database.png) no-repeat center scroll;
+    width: 40px;
+    height: 55px;
+    display: inline-block;
+    line-height: 55px;
     background-position: -227px -291px;
-    padding-left: 55px;
+    vertical-align: middle;
 }
-
-.text-l {
-    background-position: -153px -292px;
-    padding-left: 15px;
+.host-name{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 55px;
+    padding: 0 5px;
 }
+.icon-host-simple-m.text-l>.icon-img{
+    float: right;
+}
+    /*.text-l {*/
+    /*background-position: -153px -292px;*/
+    /*padding-left: 15px;*/
+/*}*/
 
 .group-wrap {
     margin: 10px 0;
+    text-align: center;
 }
 
 .group-bg {
