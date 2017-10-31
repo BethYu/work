@@ -535,7 +535,8 @@ a.logo {
 .default-list-box .table-header,
 .reward-list-title,
 .rewards-transfer-title,
-.payment-method-list-title{
+.payment-method-list-title,
+.my_deal-list-title{
     font-family: 'Microsoft YaHei';
     font-weight: bold;
     font-size: 18px;
@@ -760,7 +761,8 @@ a.logo {
 
 /*reward*/
 .reward-list-title,
-.payment-method-list-title{
+.payment-method-list-title,
+.my_deal-list-title{
     font-size: 20px;
 }
 .reward-list-body,
@@ -855,8 +857,10 @@ a.logo {
     font-size: 12px;
     color: #ef3830;
 }
-.modal-green .btn{
+.modal-green .btn,
+.alert-white .btn{
     border-radius: 2px;
+    padding: 6px 43px;
 }
 .regiser-box .modal-dialog,
 .change-password-box .modal-dialog,
@@ -869,9 +873,6 @@ a.logo {
 }
 .modal-green .form-group{
     margin-bottom: 20px;
-}
-.modal-green .btn{
-    padding: 6px 43px;
 }
 .alert-white {
     color: #4a4c45;
@@ -961,17 +962,62 @@ a.logo {
     min-width: 125px;
 }
 @media (max-width: 992px){
-    .payment-method-list-title + .panel-body{
+    .payment-method-list-title + .panel-body,
+    .my_deal-list-title + .panel-body{
         overflow-x: auto;
     }
-    .payment-method-list-body{
+    .payment-method-list-body,
+    .my_deal-list-body{
         min-width: 970px;
     }
 }
-.payment-method-alert .alert-white{
+.payment-method-list-body .btn{
+    padding: 4px 6px;
+}
+.payment-method-alert .alert-white,
+.my-deal-alert .alert-white{
     padding-bottom: 15px;
 }
-.paypel-box.modal-green .modal-footer{
+.paypel-box.modal-green .modal-footer,
+.order-box.modal-green .modal-footer{
     padding-bottom: 20px;
     padding-top: 5px;
+}
+
+/*my deal*/
+.my_deal{
+
+}
+.btn-share{
+    background-color: #ededed;
+    border-color: #4a4c45;
+    color: #4a4c45;
+    min-width: 63px;
+}
+.btn-share:hover,.btn-share:focus{
+    opacity: 0.75;
+    background-color: #ededed;
+    border-color: #4a4c45;
+    color: #4a4c45;
+}
+.my_deal-list-body p{
+    margin: 15px auto;
+}
+.my_deal-list-body .btn-orange,
+.my_deal-list-body .btn-red{
+    min-width: 125px;
+}
+.btn-orange{
+    background-color: #ebaf5c;
+    border-color: #ebaf5c;
+    color: #fff;
+}
+.btn-orange:hover,.btn-orange:focus{
+    opacity: 0.75;
+    background-color: #ebaf5c;
+    border-color: #ebaf5c;
+    color: #fff;
+}
+.alert-white .social-img-list{
+    margin-bottom: 5px;
 }
