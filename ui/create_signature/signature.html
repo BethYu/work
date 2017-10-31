@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Signature</title>
+  <style>
+    * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    html{
+      font-size: 16px;
+    }
+    body,
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      margin: 0;
+      font: inherit;
+      font-weight: 300;
+
+    }
+    body{
+      font-family: Segoe UI, tahoma, arial, sans-serif;
+      font-size: 0.625rem;
+    }
+    ul{
+      padding-left: 0;
+    }
+    ul li {
+      list-style: none;
+    }
+    input, textarea, select, button {
+      outline: none !important;
+    }
+    p {
+      margin: 0 0 10px;
+    }
+    .ellipsis {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis !important;
+    }
+    .break-word{
+      word-break: break-all;
+      word-wrap: break-word;
+    }
+    .container{
+      margin: 15px 25px;
+    }
+    .line-hr{
+      height: 1px;
+      border-top: 1px solid #ddd;
+    }
+    .line-hr span {
+      position: relative;
+      top: -8px;
+      background: #fff;
+      padding: 0 3px;
+      margin-left: 7px;
+    }
+    .row:before ,.row:after{
+      display: table;
+      content: " ";
+    }
+    .row:after {
+      clear: both;
+    }
+    .row{
+      margin-bottom: 15px;
+    }
+    .box{
+      position: relative;
+      float: left;
+    }
+    .box-body{
+      border-left: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      padding: 15px 10px 10px;
+    }
+    .create-by.box{
+      width: 35%;
+      padding-right: 15px;
+    }
+    .preview.box{
+      width: 65%;
+    }
+    .options.box{
+      width: 100%;
+    }
+    .btn-client{
+      border: 1px solid #adb0ad;
+      background-color: #e2e2e2;
+      padding: 4px 12px;
+      cursor: pointer;
+    }
+    .btn-client:hover, .btn-client:focus{
+      border-color: #0078d7;
+    }
+    .btn-client.disabled, .btn-client:disabled{
+      background-color: #ccc;
+      color: #686868;
+    }
+    .create-by.box  .btn-client{
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .create-by.box .box-body>.row:last-child,
+    .create-by.box .box-body>.row:last-child .btn-client{
+      margin-bottom: 0;
+    }
+    .preview-img{
+      border: 1px solid #686868;
+      text-align: center;
+      height: 220px;
+    }
+    .preview-img img{
+      height: 100%;
+    }
+    .options.box .box-body>.row:last-child{
+      margin-bottom: 5px;
+    }
+    input[type="checkbox"] {
+      margin-right: 1px;
+    }
+    .checkbox>*{
+      vertical-align: middle;
+    }
+    .set.box{
+      width: 35%;
+      text-align: right;
+    }
+    .checkbox.box{
+      width: 65%;
+    }
+    .set.box>.btn-client{
+      min-width: 140px;
+    }
+    .footer-content .btn-client{
+      min-width: 80px;
+      margin: auto 5px;
+    }
+    .footer-content .btn-client:last-child{
+      margin-right: 0;
+    }
+    .footer-content .btn-client:first-child{
+      margin-left: 0;
+    }
+    .create-onlne-signature + .footer-content{
+      text-align: right;
+      padding: 10px 0 0;
+    }
+    .save-onlne-signature{
+      border: 1px solid #dcdcdc;
+      padding: 10px 5px 0;
+      margin-bottom: 25px;
+      height: 350px;
+      overflow: auto;
+    }
+    .signature.box{
+      width: 33.3333%;
+      padding-right: 5px;
+      padding-left: 5px;
+      padding-bottom: 10px;
+    }
+    .signature-img{
+      border: 1px solid #eee;
+      height: 90px;
+      text-align: center;
+    }
+    .signature-img img{
+      height: 100%;
+    }
+    .signature-img:hover, .signature-img:focus,.signature-img.active{
+      border: 1px solid #96ceff;
+    }
+    .save-onlne-signature .row:last-child{
+      margin-bottom: 0;
+    }
+    .save-onlne-signature + .footer-content{
+
+    }
+    .pull-right{
+      float: right;
+    }
+  </style>
+</head>
+<body>
+<!--create onlne signature start-->
+<div class="container">
+  <div class="main-content create-onlne-signature">
+    <div class="row">
+      <div class="create-by box">
+        <div class="line-hr">
+          <span>
+            Create By
+          </span>
+        </div>
+        <div class="box-body">
+          <div class="row">
+            <button class="btn-client">Draw Signature</button>
+          </div>
+          <div class="row">
+            <button class="btn-client">Import File</button>
+          </div>
+          <div class="row">
+            <button class="btn-client">Paste from Clipboard</button>
+          </div>
+          <div class="row">
+            <button class="btn-client">Type Signature</button>
+          </div>
+          <div class="row">
+            <button class="btn-client">Online signature</button>
+          </div>
+        </div>
+      </div>
+      <div class="preview box">
+        <div class="line-hr">
+          <span>
+            Preview
+          </span>
+        </div>
+        <div class="box-body">
+          <div class="preview-img">
+            <img src="img/preview-tesi.png" alt=""/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="options box">
+        <div class="line-hr">
+          <span>
+            Options
+          </span>
+        </div>
+        <div class="box-body">
+          <div class="row">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="checkbox" value=" ">
+                <span>Convert signature to black & white</span>
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" name="checkbox" value=" ">
+                <span>Discard this signature when program closes</span>
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="checkbox box">
+              <label>
+                <input type="checkbox" name="checkbox" value=" ">
+                <span>Require password to use this signature</span>
+              </label>
+            </div>
+            <div class="set box">
+              <button class="btn-client disabled">Set Password</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-content">
+    <button class="btn-client">Save Onine</button>
+    <button class="btn-client disabled">Save</button>
+    <button class="btn-client">Cancel</button>
+  </div>
+</div>
+<!--sacreateve onlne signature end-->
+
+<!--save onlne signature start-->
+<div class="container">
+  <div class="main-content save-onlne-signature">
+    <div class="row">
+      <div class="signature box">
+        <div class="signature-img active">
+          <img src="img/preview-tesi.png" alt=""/>
+        </div>
+      </div>
+      <div class="signature box">
+        <div class="signature-img">
+
+        </div>
+      </div>
+      <div class="signature box">
+        <div class="signature-img">
+
+        </div>
+      </div>
+      <div class="signature box">
+        <div class="signature-img">
+
+        </div>
+      </div>
+      <div class="signature box">
+        <div class="signature-img">
+
+        </div>
+      </div>
+      <div class="signature box">
+        <div class="signature-img">
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <div class="footer-content">
+    <button class="btn-client">Delete</button>
+    <div class="pull-right">
+      <button class="btn-client">Download</button>
+      <button class="btn-client">Cancel</button>
+    </div>
+  </div>
+</div>
+<!--save onlne signature end-->
+</body>
+</html>

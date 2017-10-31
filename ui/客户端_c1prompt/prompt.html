@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .box{
+            width: 350px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid rgba(0,0,0,.15);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.176) !important;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+        }
+        .box img{
+            width: 50px;
+        }
+        button {
+            display: inline-block;
+            padding: 6px 25px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.42857143;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            cursor: pointer;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+        .btn-success {
+            color: #fff;
+            background-color: #5cb85c;
+            border-color: #4cae4c;
+        }
+        .btn-danger {
+            color: #fff;
+            background-color: #d9534f;
+            border-color: #d43f3a;
+        }
+        .success{
+            color: #3c763d;
+            background-color: #dff0d8;
+            border-color: #d6e9c6;
+        }
+        .danger{
+            color: #a94442;
+            background-color: #f2dede;
+            border-color: #ebccd1;
+        }
+        .head{
+            padding: 0 0 20px;
+        }
+        .img_box{
+            display: inline-block;
+            width: 20%;
+            position: relative;
+            top: 15px;
+        }
+        .h_box{
+            display: inline-block;
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+<div class="box success">
+    <div class="head">
+        <div class="img_box"><img src="img/yes.png" alt=""/></div>
+        <div class="h_box"><h3>Shared Success!</h3></div>
+    </div>
+    <button class="btn-success">OK</button>
+</div>
+<div class="box danger">
+    <div class="head">
+        <div class="img_box"><img src="img/no.png" alt=""/></div>
+        <div class="h_box"><h3>Shared Failed!</h3></div>
+    </div>
+    <button class="btn-danger">OK</button>
+</div>
+</body>
+</html>

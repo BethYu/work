@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #fff;
+            color: #333;
+            font-size: 0.8em;
+            font-family: Segoe UI, tahoma, arial, sans-serif;
+            line-height: 130%;
+        }
+        .step1,.step2{
+            width: 630px;
+            height: 480px;
+        }
+        .container_box{
+            padding: 10px;
+        }
+        .p-lr-10{
+            padding: 0 10px;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        .form-group:after {
+            visibility: hidden;
+            display: block;
+            font-size: 0;
+            content: ". ";
+            clear: both;
+            height: 0;
+        }
+        .group-2 {
+            position: relative;
+            float: left;
+            width: 20%;
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+        .group-4 {
+            position: relative;
+            float: left;
+            width: 40%;
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+        .group-8 {
+            position: relative;
+            float: left;
+            width: 80%;
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+        .group-offset-2{
+            margin-left: 20%;
+        }
+        .prompt{
+            color: #888;
+        }
+        input[type="button"]{
+            border: 1px solid #adb0ad;
+            background-color: #e2e2e2;
+            padding: 4px 12px;
+        }
+        input[type="text"]{
+            border: 1px solid #959595;
+            padding: 4px 12px;
+        }
+    </style>
+</head>
+<body>
+<div class="container_box">
+    <div class="step1">
+        <h4> <b>Step 1 of 2: Specify Who Should Have Access</b></h4>
+        <div class="form-group">
+            <div class="group-2">
+                Give Access To:
+            </div>
+            <div class="group-8">
+                <div class="group-4">
+                    <input type="text"/>
+                </div>
+                <div class="group-4">
+                    <input type="text"/>
+                </div>
+                <div class="group-2">
+                    <input type="button" value="+"/>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="group-offset-2 p-lr-10">
+                <p>11@11.com, Normal Member  <span>X</span></p>
+                <p>11@11.com, Normal Member  <span>X</span></p>
+                <p>11@11.com, Normal Member  <span>X</span></p>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="group-offset-2 p-lr-10">
+                <span class="prompt">Your document set will be protected from anyone who is not on your list above.</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="group-offset-2 p-lr-10">
+                <input type="button" value="Next: Upload Documents and Finish"/>
+            </div>
+        </div>
+    </div>
+    <div class="step2">
+        <h4> <b>Step 2 of 2: Upload Documents, Specify Sharing Settings</b></h4>
+        <div class="form-group">
+            <div class="group-2">
+                Room Protection Level
+            </div>
+            <div class="group-8 p-lr-10">
+                <label><input type="radio" value="private" name="radio"><b>PRIVATE</b></label>
+                <p>Email verified recipients only.<p>
+                <label><input type="radio" value="confidential" name="radio"><b>CONFIDENTIAL</b></label>
+                <p>Email verified recipients only, plus dynamic watermark tracking (to protect against, and trace the source of, a leak).</p>
+                <label><input type="radio" value="confidential" name="radio"><b> CLASSIFIED</b></label>
+                <p>Email verified recipients only, dynamic watermark tracking (to protect against, and trace the source of, a leak), plus DRM Protection (downloaded docs can only be viewed by original downloader).</p>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="group-2">
+                Watermark message
+            </div>
+            <div class="group-8 p-lr-10">
+                <input type="text"/>
+            </div>
+        </div>
+        <div class="form-group ">
+            <p>Specify which pages can be previewed by everyone (unprotected):</p>
+        </div>
+        <div class="form-group">
+            <div class="group-2">
+                Number of Preview Pages
+            </div>
+            <div class="group-8 p-lr-10">
+                <input type="text" value="3"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="group-2">
+                Member List
+            </div>
+            <div class="group-8 p-lr-10">
+                <label><input type="checkbox"  name="checkbox" value="1" style=""><b>Hide member list from room members</b> </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="group-2">
+                Room Name
+            </div>
+            <div class="group-8 p-lr-10">
+                <input type="text"/>
+                <p>
+                    <span class="prompt"> Enter a custom Room Name above, or use the default name as it appears.</span><br/>
+                    <span class="prompt">Name cannot contain the following characters (e.g. / , \ , : , " , * , ? , < , > , | , ‘’ , “”) and a period (.) cannot be used to start the name.</span>
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="group-2">
+                Room Name
+            </div>
+            <div class="group-8 p-lr-10">
+                <textarea name="" id="" cols="30" rows="5"></textarea>
+                <p>
+                    <span class="prompt"> Clicking “Done” will add your document(s) to a room, then send an email containing a secure room access link to each new user you authorized (or all users if the room is new).</span>
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="group-offset-2 p-lr-10">
+                <input type="button" value="Go back"/>
+                <input type="button" value="Done"/>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
