@@ -532,9 +532,10 @@ a.logo {
 .pro-all-box .price,
 .social-link,
 .mes-list-title,
-.ponit-list-box .table-header,
+.default-list-box .table-header,
 .reward-list-title,
-.rewards-transfer-title{
+.rewards-transfer-title,
+.payment-method-list-title{
     font-family: 'Microsoft YaHei';
     font-weight: bold;
     font-size: 18px;
@@ -718,42 +719,48 @@ a.logo {
     padding: 30px 50px;
 }
 
-.ponit-list-box .table-header {
+.default-list-box .table-header {
     font-size: 14px;
 }
 
-.ponit-list-box ul.ul-table > li > div {
+.default-list-box ul.ul-table > li.table-header {
+    border-bottom: none;
+}
+.default-list-box ul.ul-table > li {
     border-bottom: 2px dotted #f3f3f5;
+}
+.default-list-box ul.ul-table > li > div {
     font-size: 12px;
-    padding: 25px 10px;
+    padding: 25px 0;
 }
 
-.ponit-list-box ul.ul-table > li.table-header > div {
+.default-list-box ul.ul-table > li.table-header > div {
     border-bottom: none;
     padding: 12px;
     font-size: 14px;
 }
 
-.ponit-list-box .table-header {
+.default-list-box .table-header {
     -webkit-box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.07);
     -moz-box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.07);
     box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.07);
 }
 
-.ponit-list-box {
+.default-list-box {
     padding: 13px 20px;
 }
 
-.ponit-list-box ul.ul-table > li.table-header:hover {
+.default-list-box ul.ul-table > li.table-header:hover {
     background: none;
 }
 
-.ponit-list-box ul.ul-table > li:hover {
+.default-list-box ul.ul-table > li:hover {
     background: #f3f3f5;
 }
 
 /*reward*/
-.reward-list-title{
+.reward-list-title,
+.payment-method-list-title{
     font-size: 20px;
 }
 .reward-list-body,
@@ -909,4 +916,62 @@ a.logo {
     margin-bottom: 20px;
     display: block;
     cursor: pointer;
+}
+/*default-list-box*/
+.default-list-box .panel-head{
+    margin-top: 17px;
+    margin-bottom: 10px;
+}
+/*payment method */
+.default-list-box .payment-method-list-body ul.ul-table > li.table-header > div{
+    padding-left: 0;
+    padding-right: 0;
+}
+.payment-method-list-body img{
+    width: 80px;
+    height: 80px;
+}
+.btn-white{
+    background-color: #fff;
+    border-color: #4a4c45;
+    color: #4a4c45;
+    min-width: 80px;
+}
+.btn-white:hover,.btn-white:focus{
+    opacity: 0.75;
+}
+.payment-method-list-body .btn{
+    font-size: 12px;
+    display: block;
+    margin: auto;
+}
+.payment-method-list-body .btn + .btn{
+    margin-top: 20px;
+}
+.btn-disabled{
+    background-color: #d9d9d7;
+    border-color: #d9d9d7;
+    color: #fff;
+    min-width: 82px;
+}
+.btn-disabled:hover,.btn-disabled:focus{
+    color: #fff;
+}
+.payment-method-list-body .btn-green{
+    min-width: 125px;
+}
+@media (max-width: 992px){
+    .payment-method-list-title + .panel-body{
+        overflow-x: auto;
+    }
+    .payment-method-list-body{
+        min-width: 970px;
+    }
+}
+.payment-method-alert .alert-white{
+    padding-bottom: 15px;
+}
+.paypel-box.modal-green .modal-footer{
+    padding-bottom: 20px;
+    padding-top: 5px;
 }
