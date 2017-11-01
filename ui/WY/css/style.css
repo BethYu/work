@@ -88,7 +88,6 @@ a.logo {
 .panel {
     border: none;
     border-radius: 3px;
-    box-shadow: 0 0 13px 0 rgba(28, 42, 55, 0.15);
 }
 
 .m-bot15 {
@@ -405,7 +404,6 @@ a.logo {
     color: #fff;
     background-color: #c9302c;
     border-color: #ac2925;
-    opacity: .8;
 }
 
 .product-list-pagination .pagination {
@@ -536,7 +534,8 @@ a.logo {
 .reward-list-title,
 .rewards-transfer-title,
 .payment-method-list-title,
-.my_deal-list-title{
+.my_deal-list-title,
+.profile-list-title{
     font-family: 'Microsoft YaHei';
     font-weight: bold;
     font-size: 18px;
@@ -563,9 +562,8 @@ a.logo {
 
 .btn-green.active, .btn-green.focus, .btn-green:active, .btn-green:focus, .btn-green:hover, .open > .dropdown-toggle.btn-green {
     color: #fff;
-    background-color: #72b160;
-    border-color: #72b160;
-    opacity: .8;
+    background-color: #82cc6e;
+    border-color: #82cc6e;
 }
 
 /*message*/
@@ -647,12 +645,22 @@ a.logo {
 }
 
 /*point*/
+.ponit-list-title{
+    box-shadow: 0 0 13px 0 rgba(28, 42, 55, 0.15);
+}
+.ponit-list-title + section.panel{
+    box-shadow: 0 0 13px 0 rgba(28, 42, 55, 0.15);
+}
 .ponit-list-title label {
     color: #979991;
+    margin-right: 10px;
 }
-
 .ponit-list-title * {
     border-radius: 3px;
+}
+.ponit-list-title .form-inline{
+    text-align: justify;
+    text-align-last: justify;
 }
 
 /*text input*/
@@ -691,7 +699,6 @@ a.logo {
     padding: 9px 16px;
     margin: auto 12px;
 }
-
 .btn-fb {
     background-color: #6c92af;
     border-color: #6c92af;
@@ -704,17 +711,21 @@ a.logo {
     border-color: #6c92af;
     opacity: .8;
 }
-
+@media (min-width: 768px){
+    .ponit-list-title .form-control {
+        min-width: 190px !important;
+    }
+}
 @media (min-width: 992px) {
     .ponit-list-title .btn {
         padding: 9px 32px;
-        margin: auto 14px;
     }
 
     .ponit-list-title .form-control {
         min-width: 345px !important;
     }
 }
+
 
 .ponit-list-title .panel-heading {
     padding: 30px 50px;
@@ -762,7 +773,8 @@ a.logo {
 /*reward*/
 .reward-list-title,
 .payment-method-list-title,
-.my_deal-list-title{
+.my_deal-list-title,
+.profile-list-title{
     font-size: 20px;
 }
 .reward-list-body,
@@ -839,11 +851,13 @@ a.logo {
 .modal-green .modal-body{
     padding: 20px 20px 15px;
 }
-.modal-green .form-control{
+.modal-green .form-control,
+.profile-form .form-control{
     border-radius: 0;
 }
 
-.modal-green label{
+.modal-green label,
+.profile-form label {
     font-weight: inherit;
     margin-bottom: 10px;
     color: #4a4c45;
@@ -1020,4 +1034,30 @@ a.logo {
 }
 .alert-white .social-img-list{
     margin-bottom: 5px;
+}
+/*profile*/
+.profile-form .form-control{
+    height: 46px;
+}
+.form-control {
+    color: #969991;
+}
+.profile-form .row {
+    margin-right: -20px;
+    margin-left: -20px;
+}
+.profile-form .col-xs-6 {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.profile-form .btn {
+    padding: 12px 23px;
+    border-radius: 2px;
+}
+.profile-form .form-group:last-child{
+    margin-top: 40px;
+}
+.profile-form{
+    max-width: 500px;
+    margin: auto;
 }
