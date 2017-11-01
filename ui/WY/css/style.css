@@ -1061,3 +1061,46 @@ a.logo {
     max-width: 500px;
     margin: auto;
 }
+/*email*/
+.email-container{
+    background-color: #fff;
+}
+.line-hr{
+    height: 1px;
+    border-top: 1px solid #ccc;
+}
+.line-hr div {
+    position: relative;
+    top: -19px;
+    background: #fff;
+    padding: 0 3px;
+    margin-left: 30px;
+    display: inline-block;
+}
+.email-body{
+    padding: 50px 30px;
+}
+.box-body{
+    padding: 50px 30px 30px;
+    color: #333;
+}
+.email-container .text-line,
+.email-container dd, .email-container dt{
+    line-height: 30px;
+}
+.email-container  dl{
+    margin: 10px auto;
+}
+.email-container .text-footer{
+    font-family: 'Microsoft YaHei';
+    font-weight: bold;
+    font-size: 14px;
+    color: #666;
+    margin-top: 45px;
+}
+.email-cl-blue{
+    color: #2f6efd;
+}
+.email-cl-red{
+    color: #fe3c3c;
+}
