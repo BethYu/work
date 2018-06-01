@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="body">
+  <section>
+    <!--header start-->
+    <header class="header">
+      <div class="container">
+        <div class="navbar-header vertical-middle">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#header-navbar-collapse">
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!--logo start-->
+          <a href="javascript:;" class="logo">
+            <div class="header-title">
+              政务服务智能表单平台
+            </div>
+          </a>
+          <!--logo end-->
+        </div>
+        <div class="collapse navbar-collapse" id="header-navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li>
+              <a class="header-nav-link" href="javascript:;">Home</a>
+            </li>
+            <li>
+              <a class="header-nav-link" href="javascript:;">Rewards</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a class="header-nav-link" href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-user"></i>
+                用户 <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu dropdown-details">
+                <div class="log-arrow-up"></div>
+                <li><a class="header-nav-link" href="javascript:;">Profile</a></li>
+                <li><a class="header-nav-link" href="javascript:;"> Change Password</a></li>
+                <li><a class="header-nav-link" href="javascript:;"> My Deals</a></li>
+                <li><a class="header-nav-link" href="javascript:;"> Rewards</a></li>
+                <li><a class="header-nav-link" href="javascript:;">Referal</a></li>
+                <li><a class="header-nav-link" href="javascript:;">Logout</a></li>
+                <!--<li class="divider"></li>-->
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!--header end-->
+    <!--main content start-->
+    <section class="container main-content min-height">
+      <section class="wrapper">
+        <!-- page start-->
+        <div class="panel-body">
+          <span class="xs-title">发布表单</span>
+          <p class="col-7a">上传一个文档并把它转成一个表单进行发布，您可以获取一个URL进行快速发布及收集数据。</p>
+          <div class="dropzone-wrap">
+            <form action=" " class="dropzone clickable" id="">
+              <div class="form-file-logo">
+              </div>
+              <div class="text-center">
+                <a href="javascript:;" class="btn btn-orange file">生成并发布智能表单
+                  <input type="file" name="" id="">
+                </a>
+              </div>
+            </form>
+          </div>
+          <div class="dropzone-wrap">
+            <form action=" " class="dropzone clickable" id="">
+              <div class="form-wrap">
+                <div class="form-group">
+                  <label class="control-label" for="">URL(分享给所需者填写内容提交)：</label>
+                  <input class="form-control" id="" type="text" placeholder="Disabled input here..." disabled="">
+                  <button type="button" class="btn btn-orange">复制链接</button>
+                  <button type="button" class="btn btn-orange-white">在线打开</button>
+                  <button type="button" class="btn btn-orange-white">下载表单</button>
+                </div>
+                <div class="form-group">
+                  <label class="control-label" for="">ODATA URL(查看表单数据)：</label>
+                  <input class="form-control" id="" type="text" placeholder="Disabled input here..." disabled="">
+                  <button type="button" class="btn btn-orange" data-toggle="modal" data-target="#pro_modal">复制链接</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="panel-heading clearfix">
+            <span  class="xs-title">发布表单</span>
+            <button type="button" class="btn btn-white pull-right">生成并发布智能表单</button>
+          </div>
+          <div class="">
+            <table class="table table-striped">
+              <tbody>
+              <tr>
+                <td>xxxxx申请表</td>
+                <td><div class="text-word-wrap text-decoration">aaafdshdsjfhdjkshfdkjfkjdshaa</div></td>
+                <td><a href="javascript:;">下载表单</a></td>
+                <td><a href="javascript:;">复制ODATA URL</a></td>
+                <td><a href="javascript:;">查看权限</a></td>
+              </tr>
+              <tr>
+                <td>xxxxx申请表</td>
+                <td><div class="text-word-wrap text-decoration">aaafdshdsjfhdjkshfdkjfkjdshaa</div></td>
+                <td><a href="javascript:;">下载表单</a></td>
+                <td><a href="javascript:;">复制ODATA URL</a></td>
+                <td><a href="javascript:;">查看权限</a></td>
+              </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="panel-body">
+          <div class="panel-heading clearfix">
+            <span class="xs-title">发布表单</span>
+            <div class="dataTables_paginate paging_bootstrap pagination">
+              <ul>
+                <li class="prev disabled"><a href="#">← Previous</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li class="next"><a href="#">Next → </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="">
+            <table class="table table-striped">
+              <thead>
+              <tr>
+                <th>First Name</th>
+                <th>Responses</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Form URL</th>
+                <th></th>
+              </tr>
+              </thead>
+              <tbody class="col-7a">
+              <tr>
+                <td>
+                  <a href="javascript:;">
+                    <i class="fa fa-file-pdf-o"></i>
+                    <span>TESTS4TTSE</span>
+                  </a>
+                  <i class="fa fa-search-plus"></i>
+                </td>
+                <td>12</td>
+                <td>Apr 23,2018</td>
+                <td>Published</td>
+                <td>
+                  <div class="text-word-wrap">https://www.foxitwenform.com/test</div>
+                </td>
+                <td> <div class="btn-group">
+                  <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button" aria-expanded="true"> Dropdown <span class="caret"></span> </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Dropdown link 1</a></li>
+                    <li><a href="#">Dropdown link 2</a></li>
+                    <li><a href="#">Dropdown link 3</a></li>
+                  </ul>
+                </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="javascript:;">
+                    <i class="fa fa-file-pdf-o"></i>
+                    <span>TESTS4TTSE</span>
+                  </a>
+                  <i class="fa fa-search-plus"></i>
+                </td>
+                <td>12</td>
+                <td>Apr 23,2018</td>
+                <td>Published</td>
+                <td>
+                  <div class="text-word-wrap">https://www.foxitwenform.com/test</div>
+                </td>
+                <td> <div class="btn-group">
+                  <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button" aria-expanded="true"> Dropdown <span class="caret"></span> </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Dropdown link 1</a></li>
+                    <li><a href="#">Dropdown link 2</a></li>
+                    <li><a href="#">Dropdown link 3</a></li>
+                  </ul>
+                </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="javascript:;">
+                    <i class="fa fa-file-pdf-o"></i>
+                    <span>TESTS4TTSE</span>
+                  </a>
+                  <i class="fa fa-search-plus"></i>
+                </td>
+                <td>12</td>
+                <td>Apr 23,2018</td>
+                <td>Published</td>
+                <td>
+                  <div class="text-word-wrap">https://www.foxitwenform.com/test</div>
+                </td>
+                <td> <div class="btn-group">
+                  <button data-toggle="dropdown" class="btn btn-default dropdown-toggle" type="button" aria-expanded="true"> Dropdown <span class="caret"></span> </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Dropdown link 1</a></li>
+                    <li><a href="#">Dropdown link 2</a></li>
+                    <li><a href="#">Dropdown link 3</a></li>
+                  </ul>
+                </div>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- page end-->
+      </section>
+    </section>
+    <!--main content end-->
+    <!--footer start-->
+    <footer class="site-footer">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-offset-2 col-md-8">
+            <div class="col-xs-3">
+              <h5>关于我们</h5>
+              <p>法律公告 <br/> 隐私条款</p>
+            </div>
+            <div class="col-xs-3">
+              <h5>帮助与支持</h5>
+              <p>常见问题 <br/>用户手册</p>
+            </div>
+            <div class="col-xs-3">
+              <h5>关注我们</h5>
+            </div>
+            <div class="col-xs-3">
+              <h5>联系我们</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--footer end-->
+  </section>
+</div>
+
+
+<!-- modal start -->
+<div class="modal fade" id="pro_modal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">身份认证</h4>
+      </div>
+      <div class="modal-body">
+        <p>
+          <span class="xs-title">个人信息</span>
+          <span class="col-7a">按照提示填写本人的真实资料</span>
+        </p>
+        <form class="form-horizontal col-7a" role="form">
+          <div class="form-group">
+            <label for="" class="col-sm-2 control-label"> <span>真实姓名</span> <span class="text-required">*</span></label>
+            <div class="col-sm-9">
+              <input type="" class="form-control" id="" placeholder="填写与身份证上一致真实姓名">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="" class="col-sm-2 control-label"> <span>身份证号</span> <span class="text-required">*</span></label>
+            <div class="col-sm-9">
+              <input type="" class="form-control" id="" placeholder="填写与真实姓名对应18位二代身份证号">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="" class="col-xs-2 control-label"> <span>身份证扫描正面</span></label>
+            <div class="col-xs-3">
+              <a href="javascript:;" class="openfile-button file">
+                <p><i class="fa fa-plus"></i></p>
+                添加文件
+                <input type="file" name="" id="">
+              </a>
+            </div>
+            <div class="col-xs-6">
+              <label for="" class="col-xs-4 control-label"> <span>参考示例</span></label>
+              <div class="col-xs-6">
+                <div class="examples-img">
+                  <img src="img/id-positive.png" alt=""/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="" class="col-xs-2 control-label"> <span>身份证扫描方面</span></label>
+            <div class="col-xs-3">
+              <a href="javascript:;" class="openfile-button file">
+                <p><i class="fa fa-plus"></i></p>
+                添加文件
+                <input type="file" name="" id="">
+              </a>
+            </div>
+            <div class="col-xs-6">
+              <label for="" class="col-xs-4 control-label"> <span>参考示例</span></label>
+              <div class="col-xs-6">
+                <div class="examples-img">
+                  <img src="img/id-negative.png" alt=""/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-lg-10">
+               <ul class="list-disc">
+                 <li>身份证信息需清晰可辨认</li>
+                 <li>原件照片或彩色扫描件，格式为JPG、JPEG、PNG，大小不超过10MB</li>
+               </ul>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <div class="col-sm-offset-2 text-left">
+          <button type="submit" class="btn btn-gray">提交</button>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal -->
+</div>
+<!-- modal end -->
+
+<!--success modal start -->
+<div class="modal fade" id="" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">表单提交</h4>
+      </div>
+      <div class="modal-body text-center font-inherit alert-wrap alert-wrap-danger">
+        <h1>
+          <i class="fa fa-check-circle fa-lg color-success"></i>
+          表单提交成功！
+        </h1>
+        <h3 class="col-7a">
+          你提交编号是：<span class="color-danger">FY156456</span>
+        </h3>
+        <h3  class="col-7a">
+          请记录编号方便查询
+        </h3>
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal -->
+</div>
+<!--success modal end -->
+<!--danger modal start -->
+<div class="modal fade" id="" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">表单提交</h4>
+      </div>
+      <div class="modal-body text-center font-inherit alert-wrap">
+        <h1>
+          <i class="fa fa-times-circle fa-lg color-danger"></i>
+          表单提交不成功！
+        </h1>
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal -->
+</div>
+<!--danger modal end -->
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/common-scripts.js"></script>
+</body>
+</html>
