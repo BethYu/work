@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="body">
+  <section>
+    <!--header start-->
+    <header class="header">
+      <div class="container">
+        <div class="admin-top clearfix">
+          <div class="logo"></div>
+          <h2>WebPDF Administrator Configuration</h2>
+          <div class="admin-name tright">
+            <a target="_blank" href="http://www.foxitsoftware.com/">Foxit</a> <em>|</em> <a id="logout">Logout</a>
+          </div>
+        </div>
+
+      </div>
+    </header>
+    <!--header end-->
+    <!--main content start-->
+    <section class="container main-content">
+      <section class="wrapper">
+        <!-- page start-->
+        <section class="row">
+          <div class="col-sm-4">
+            <div class="panel">
+              <header class="panel-body nav-list-l nav-collapse " id="sidebar">
+                <ul class="nav-list" id="nav-accordion">
+                  <li class="sub-menu" data-toggle="tab" href="#Activation">
+                    <a  >
+                    Services Activation
+                    </a>
+                  </li>
+                  <li class="sub-menu" data-toggle="tab" href="#AccountManage">
+                    <a >
+                    Account Manage
+                    </a>
+                  </li>
+                  <li class="sub-menu" data-toggle="tab" href="#CPUManage">
+                    <a >
+                    CPU Manage
+                    </a>
+                  </li>
+                  <li class="sub-menu" data-toggle="tab" href="#EnterpriseStatistics">
+                    <a >
+                    Enterprise Statistics
+                    </a>
+                  </li>
+                  <li class="sub-menu" data-toggle="tab" href="#ServerName">
+                    <a >
+                      Server Name
+                    </a>
+                  </li>
+                  <li class="sub-menu">
+                    <a href="javascript:;">
+                      PhantomFDP Manage
+                      <i class="fa fa-angle-right"></i>
+                      <i class="fa fa-angle-down"></i>
+                    </a>
+                    <ul class="submenu">
+                      <li class="sub-menu" data-toggle="tab" href="#PhantomFDPActivation">
+                        <a >PhantomFDP Activation</a>
+                      </li>
+                      <li class="sub-menu" data-toggle="tab" href="#UserManage">
+                        <a >PhantomFDP User Manage</a>
+                      </li>
+                      <li class="sub-menu" data-toggle="tab" href="PhantomFDPStatistics">
+                        <a href="javascript:;">PhantomFDP Statistics</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="sub-menu" data-toggle="tab" href="#AdminManage">
+                    <a  >
+                      Admin Manage
+                    </a>
+                  </li>
+                </ul>
+              </header>
+            </div>
+          </div>
+
+          <div class="col-sm-8">
+            <div  class="panel ">
+              <div class="panel-body">
+                <div class="tab-content">
+                  <div id="Activation" class="tab-pane">
+                    <div class="">
+                      <h4>Authorization Control</h4>
+                      <div class="azc-key">
+                        <div class="azc-desn">
+                          <p class="">Please select the ConnectedPDF key file to install</p>
+                        </div>
+                        <div class="azc-file clearfix">
+                          <label for="">Key File:</label>
+                          <input type="file" id="licenseInputFile" accept=".txt">
+                          <button class="admin-btn" >Inatall</button>
+                        </div>
+                      </div>
+                      <h4 class="">License Details</h4>
+                      <div class="">
+                        <dl class="dl-horizontal">
+                          <dt>Organization:</dt><dd>Foxit Software</dd>
+                          <dt>Expire Date:</dt><dd>2018/4/12</dd>
+                          <dt>CPU Quantity:</dt><dd>10 (6 have used)</dd>
+                          <dt>License User:</dt><dd>1000 (500 have used)</dd>
+                          <dt>Document Quantity:</dt><dd>10000</dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="AccountManage" class="tab-pane">
+                    <div class="" >
+                      <div class="ma-b10">
+                        <h4 class="inline-block">License User:</h4>
+                        <span>1000 (500 have used)</span>
+                        <div class="inline-block iconic-input right">
+                          <i class="fa fa-search"></i>
+                          <input type="text" class="form-control" placeholder="">
+                        </div>
+                      </div>
+                      <div class="">
+                        <table class="table table-primary">
+                          <thead>
+                          <tr>
+                            <th>User</th>
+                            <th>Email</th>
+                            <th>Satus</th>
+                            <th>Action</th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td>Beth</td>
+                            <td>test@fp.com</td>
+                            <td>Used</td>
+                            <td> <span class="color-yellow">Delete</span></td>
+                          </tr>
+                          <tr>
+                            <td>Beth</td>
+                            <td>test@fp.com</td>
+                            <td>Used</td>
+                            <td> <span class="color-yellow">Delete</span></td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="CPUManage" class="tab-pane">
+                    <div class="" >
+                      <h4>CPU Manage</h4>
+                      <p>CPU usage status:  <em class="ng-binding">License 20 CPUs, Used 2 CPUs, No activation 18 CPUs</em></p>
+                      <div class="">
+                        <h4 class="inline-block">Node Activation Status</h4>
+                        <div class="inline-block pull-right  pa-tb10">
+                          <button   class="admin-btn disable">Activate</button>
+                          <button    class="admin-btn disable">Inactivate</button>
+                        </div>
+                      </div>
+                      <div class="">
+                        <table class="table table-primary">
+                          <thead>
+                          <tr>
+                            <th>IP</th>
+                            <th>CPU</th>
+                            <th>Satus</th>
+                          </tr>
+                          </thead>
+                          <tbody>
+                          <tr>
+                            <td><input type="checkbox" data-status="Activated" name="licensecheck" value="127.0.0.1"  > 127.0.0.1</td>
+                            <td>1</td>
+                            <td>Activated</td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox" data-status="Activated" name="licensecheck" value="127.0.0.1"  > 127.0.0.1</td>
+                            <td>1</td>
+                            <td>Activated</td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="EnterpriseStatistics" class="tab-pane">
+                    <div class="">
+                      <table class="table table-primary">
+                        <thead>
+                        <tr>
+                          <th>Type</th>
+                          <th>Parem</th>
+                          <th>Action</th>
+                          <th>Total</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                          <td>The number of uploaded files</td>
+                          <td><input class="input-s" type="text"   placeholder="20180202"/><input class="input-s" type="text"   placeholder="20180202"/> </td>
+                          <td> <span class="color-yellow">Delete</span></td>
+                          <td>30</td>
+                        </tr>
+                        <tr>
+                          <td>The number of uploaded files</td>
+                          <td><input class="input-s" type="text"   placeholder="20180202"/><input class="input-s" type="text"   placeholder="20180202"/> </td>
+                          <td> <span class="color-yellow">Delete</span></td>
+                          <td>30</td>
+                        </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div id="ServerName" class="tab-pane">
+                    <h4 class="inline-block">Domain Name: </h4>
+                    <div class="row form-group">
+                      <div class="col-xs-8">
+                        <input class="lg-input" type="text"/>
+                      </div>
+                      <div class="col-xs-4">
+                        <button class="admin-btn">Save modofy</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="PhantomFDPActivation" class="tab-pane">
+                    <div class="">
+                      <h4>Install/ Update License</h4>
+                      <div class="">
+                        <div class="">
+                          <p class="">Please select the key file or license key to install</p>
+                        </div>
+                        <div class="pa-lr20">
+                          <div class="radio">
+                            <label>
+                              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+                              <input type="file"   accept=".txt">
+                            </label>
+                          </div>
+                          <div class="radio">
+                            <label>
+                              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                              Enter License key:
+                            </label>
+                          </div>
+                          <div  class="radio">
+                            <label class="block">
+                              <textarea class="admin-input   form-control " id="ccomment" name="comment" required=""></textarea>
+                            </label>
+                          </div>
+                          <button class="admin-btn disable">Inatall</button>
+                        </div>
+                      </div>
+                      <h4 class="">License Details</h4>
+                      <div class="">
+                        <dl class="dl-horizontal">
+                          <dt>Organization:</dt><dd>Foxit Software</dd>
+                          <dt>Expire Date:</dt><dd>2018/4/12</dd>
+                          <dt>CPU Quantity:</dt><dd>10 (6 have used)</dd>
+                          <dt>License User:</dt><dd>1000 (500 have used)</dd>
+                          <dt>Document Quantity:</dt><dd>10000</dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="UserManage" class="tab-pane ">
+                    <div class="table-responsive">
+                    <table class="table table-primary">
+                      <thead>
+                      <tr>
+                        <th>User Name</th>
+                        <th>Device</th>
+                        <th>Mac</th>
+                        <th>Activation Time</th>
+                        <th>Verify Activation Time</th>
+                        <th>Action</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td>test@fp.com</td>
+                        <td>PC</td>
+                        <td>  </td>
+                        <td> 2018/5/10 12:23:34</td>
+                        <td> 2018/5/10 12:23:34</td>
+                        <td> <span class="color-yellow">Revoke</span></td>
+                      </tr>
+                      <tr>
+                        <td>test@fp.com</td>
+                        <td>PC</td>
+                        <td>  </td>
+                        <td> 2018/5/10 12:23:34</td>
+                        <td> 2018/5/10 12:23:34</td>
+                        <td> <span class="color-yellow">Revoke</span></td>
+                      </tr>
+                      </tbody>
+                    </table>
+                    </div>
+                  </div>
+                  <div id="PhantomFDPStatistics" class="tab-pane ">
+                    <div class="ma-b10">
+                      <h4 class="inline-block">Select Time Period:</h4>
+                      <div class="inline-block">
+                        <select class="admin-input">
+                          <option>All</option>
+                          <option>Today</option>
+                          <option>Yesterday</option>
+                          <option>This Week</option>
+                          <option>Customize</option>
+                        </select>
+                        <button class="admin-btn">Search</button>
+                      </div>
+                    </div>
+                    <div class="table-responsive">
+                      <table class="table table-primary">
+                        <thead>
+                        <tr>
+                          <th>Time period</th>
+                          <th>The numbers of users</th>
+                          <th>Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                          <td> 2018/5/10 12:23:34</td>
+                          <td> 4 </td>
+                          <td><span class="color-yellow">View</span></td>
+                        </tr>
+                        <tr>
+                          <td> 2018/5/10 12:23:34</td>
+                          <td> 4 </td>
+                          <td><span class="color-yellow">View</span></td>
+                        </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div id="AdminManage" class="tab-pane active">
+                    <div class="panel-body">
+                      <div class="">
+                        <form role="form" class="form-horizontal sm-input">
+                          <div class="form-group">
+                            <label class="col-xs-3 control-label">Name:</label>
+
+                            <div class="col-xs-8">
+                              <input class="admin-input lg-input " type="text" placeholder=" ">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-xs-3 control-label">Accouont:</label>
+
+                            <div class="col-xs-8">
+                              <input class="admin-input lg-input " type="text" placeholder="">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-xs-3 control-label">Password:</label>
+
+                            <div class="col-xs-8">
+                              <input class="admin-input lg-input" type="text" placeholder="At least 6 characters">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-xs-3 control-label">Role:</label>
+                            <div class="col-xs-8">
+                              <input class="admin-input lg-input" type="text" placeholder="admin">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="col-xs-offset-3 col-xs-8">
+                              <button class="admin-btn mr10">Save</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- page end-->
+      </section>
+    </section>
+    <!--main content end-->
+    <!--footer start-->
+    <footer class="site-footer">
+      <div class="container text-center">
+        <div class="text-center text-muted pa-tb10">
+          <p class="text-uppercase">get in touch</p>
+          <p>Sales:1-866-680-3668</p>
+          <p>Support & General:1-866-MYFOXIT OR 1-866-693-6948</p>
+          <p>© Foxit Software Incorporated. All right reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!--footer end-->
+  </section>
+</div>
+
+<button data-toggle="modal" data-target="#alert">alert</button>
+
+<!--alert modal start -->
+<div class="modal fade modal-dialog-center modal-success" id="alert" aria-hidden="false">
+  <div class="modal-dialog in">
+    <div class="modal-content-wrap">
+      <div class="modal-content">
+        <div class="modal-header clearfix">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        </div>
+        <div class="modal-body">
+          <div class="pop-content">
+            <div>Database connection successful. You can now apply the database.</div>
+            <span class="modal-icon icon-success"></span>
+            <span class="modal-icon icon-warning"></span>
+            <span class="modal-icon icon-fail"></span>
+          </div>
+          <div class="pop-bar">
+            <button class="pop-btn" id="">No</button>
+            <button class="pop-btn" id="">Yes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal -->
+</div>
+<!--alert modal end -->
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script class="include" type="text/javascript" src="js/jquery.dcjqaccordion.2.7.js"></script>
+<!--right slidebar-->
+<script src="js/slidebars.min.js"></script>
+
+<script src="js/common-scripts.js"></script>
+<script>
+  $(function(){
+
+  });
+</script>
+</body>
+</html>
